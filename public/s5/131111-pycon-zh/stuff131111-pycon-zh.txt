@@ -1,0 +1,28 @@
+130924 Guido
+http://weibo.com/1854260585/AaU0C7lVg?mod=weibotime
+gvanrossum在twitter上回复我了！！！@ZoomQuiet @蒋涛CSDN @developerWorks 突然觉得自己回复的好屌丝！
+
+Stéphanie ‏@stephanie__yu 9月23日
+@gvanrossum pic.twitter.com/WSAYnXhbt2
+https://twitter.com/stephanie__yu/status/381862928598577152
+
+Guido van Rossum ‏@gvanrossum 9月23日
+@stephanie__yu Why not say hi instead of stalking?
+
+Stéphanie ‏@stephanie__yu 9月24日
+“@gvanrossum: @stephanie__yu Why not say hi instead of stalking?”@gvanrossum Holy crap ..u r actually alive😦I 'm gonna show off to my friend
+
+Stéphanie ‏@stephanie__yu 9月24日
+@gvanrossum I'm just a 'good lookiing' girl learning python like print hello aha～but now I'm totally cheered up. Thank u .Dear Guido (^_^)
+
+
+11月19日 21:21 
+    http://weibo.com/1924010407/AjuDxFl5t?mod=weibotime
+@laiyonghao
+#python#这两年有点尴尬，搞 web 干不过#php#，搞socket干不过#go#，搞游戏逻辑干不过#lua#，搞群众基础干不过#java#，搞windows应用干不过#csharp#，要肿么破？！ 
+
+131025
+
+PEP 453 -- Explicit bootstrapping of pip in Python installations 
+    http://www.python.org/dev/peps/pep-0453/
+

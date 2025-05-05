@@ -1,0 +1,1610 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.11: http://docutils.sourceforge.net/" />
+<meta name="version" content="S5 1.1" />
+<title>猎豹的DevRel</title>
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 7614 2013-02-21 15:55:51Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title, .code .error {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+pre.code .ln { color: grey; } /* line numbers */
+pre.code, code { background-color: #eeeeee }
+pre.code .comment, code .comment { color: #5C6576 }
+pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
+pre.code .literal.string, code .literal.string { color: #0C5404 }
+pre.code .name.builtin, code .name.builtin { color: #352B84 }
+pre.code .deleted, code .deleted { background-color: #DEB0A1}
+pre.code .inserted, code .inserted { background-color: #A3D289}
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+/* "booktabs" style (no vertical lines) */
+table.docutils.booktabs {
+  border: 0px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-collapse: collapse;
+}
+table.docutils.booktabs * {
+  border: 0px;
+}
+table.docutils.booktabs th {
+  border-bottom: thin solid;
+  text-align: left;
+}
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+<!-- configuration parameters -->
+<meta name="defaultView" content="slideshow" />
+<meta name="controlVis" content="hidden" />
+<!-- style sheet links -->
+<script src="ui/freedom/slides.js" type="text/javascript"></script>
+<link rel="stylesheet" href="ui/freedom/slides.css"
+      type="text/css" media="projection" id="slideProj" />
+<link rel="stylesheet" href="ui/freedom/outline.css"
+      type="text/css" media="screen" id="outlineStyle" />
+<link rel="stylesheet" href="ui/freedom/print.css"
+      type="text/css" media="print" id="slidePrint" />
+<link rel="stylesheet" href="ui/freedom/opera.css"
+      type="text/css" media="projection" id="operaFix" />
+</head>
+<body>
+<div class="layout">
+<div id="controls"></div>
+<div id="currentSlide"></div>
+<div id="header">
+
+</div>
+<div id="footer">
+<h1>猎豹的<sup>DevRel</sup></h1>
+<h2><a class="reference external" href="http://wiki.woodpecker.org.cn/moin/BPUG/2005-07-30"><img alt="cpug" src="i/id/CPyUG-logo-v2all-h32.png" /></a> v14.7.3 <a class="reference external" href="http://creativecommons.org/licenses/by-nc-sa/2.5/cn/"><img alt="(CC)by-nc-sa 许可证" src="i/icon/cc-byncsa-80x15.png" /></a> 推荐用 <a class="reference external" href="http://www.mozilla.com/firefox/">Firefox</a> / <a class="reference external" href="http://www.google.com/intl/zh-CN/chrome/browser/">Chrome</a> 获得最佳体验</h2>
+</div>
+</div>
+<div class="presentation">
+<div class="slide" id="slide0">
+<h1 class="title">猎豹的<sup>DevRel</sup></h1>
+
+<!-- Definitions of interpreted text roles (classes) for S5/HTML data. -->
+<!-- This data file has been placed in the public domain. -->
+<!-- Colours
+======= -->
+<!-- Text Sizes
+========== -->
+<!-- Display in Slides (Presentation Mode) Only
+========================================== -->
+<!-- Display in Outline Mode Only
+============================ -->
+<!-- Display in Print Only
+===================== -->
+<!-- Display in Handout Mode Only
+============================ -->
+<!-- Incremental Display
+=================== -->
+<p>~ 一个商业公司的社区探索</p>
+<!-- ~ 大妈的自我纠结不弃疗... -->
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Authors:</th><td class="field-body"><a class="reference external" href="mailto:zoomquiet+coscup&#64;gmail.com">Zoom.Quiet</a></td>
+</tr>
+<tr class="field"><th class="field-name">URL:</th><td class="field-body"><a class="reference external" href="http://s5.zoomquiet.io/140703-deverl4cmcm/">http://s5.zoomquiet.io/140703-deverl4cmcm/</a></td>
+</tr>
+</tbody>
+</table>
+<!-- This document has been placed in the CC domain. -->
+<!-- 图片定义区 -->
+
+</div>
+<div class="slide" id="id3">
+<h1>&lt;免责/&gt;</h1>
+<div class="handout container">
+山寨的，非业界公认的，个人体验为基础!
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="takahashi1 simple">
+<li>一切<span class="gray">资料</span>来自网络互动挖掘</li>
+<li>一切<span class="gray">想法</span>来自日常学习工作</li>
+<li>一切体悟来自各种<span class="gray">沟通</span>交流</li>
+<li>一切<span class="gray">知识</span>来自社区分享印证</li>
+<li>一切经验来自个人<span class="gray">失败</span>体验</li>
+<li>动力源自<span class="gray">不折腾要死星人</span>体质</li>
+</ul>
+</div>
+<div class="slide" id="id4">
+<h1>&lt;免责/&gt;</h1>
+<div class="handout container">
+声音版权 <a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi9">录音</p>
+<div class="notes container">
+<ul class="simple">
+<li>俺会录音</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="presentation">
+<h1>Presentation</h1>
+<div class="handout container">
+幻灯态度 <a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi7"><span class="orange">PPT</span>去死去死团</p>
+<div class="notes container">
+<ul class="simple">
+<li>俺会录音</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id5">
+<h1><a class="reference external" href="http://www.meyerweb.com/eric/tools/s5/">S5</a></h1>
+<div class="handout container">
+纯HTML 幻灯撰写框架!... <img alt="lr_s5" src="pix/levelradar_s5.png" /></div>
+<ul class="simple">
+<li>S<sup>5</sup>== a <span class="orange">S</span> imple <span class="orange">S</span> tandards-Based <span class="orange">S</span> lide <span class="orange">S</span> how <span class="orange">S</span> ystem</li>
+</ul>
+<blockquote>
+<ul class="simple">
+<li>仅仅依靠 CSS+JS 的HTML格式幻灯演示框架</li>
+</ul>
+</blockquote>
+<ul class="simple">
+<li>我的编辑环境: <a class="reference external" href="http://wiki.woodpecker.org.cn/moin/LeoEnvironment"><img alt="LeoProse" class="align-top" src="pix/LeoProse.gif" /></a> ~ <a class="reference external" href="http://en.wikipedia.org/wiki/Literate_programming">文学化编辑器</a></li>
+</ul>
+<a class="reference external image-reference" href="http://wiki.woodpecker.org.cn/moin/LeoEnvironment"><img alt="pix/2010-01-18-230729_605x421_leo.png" class="align-center" src="pix/2010-01-18-230729_605x421_leo.png" /></a>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="handout container">
+<a class="reference external" href="http://blog.derjohng.com/2006/04/12/takahashi-method-%E7%B0%A1%E5%A0%B1/">Takahashi-method 幻灯风格</a>
+源自 Ruby 专家高橋征義(Masayoshi Takahashi)</div>
+<a class="center reference external image-reference" href="http://blog.derjohng.com/2006/04/12/takahashi-method-%E7%B0%A1%E5%A0%B1/"><img alt="高橋流" class="align-center" src="pix/Takahashi-method.jpg" style="height: 500px;" /></a>
+</div>
+<div class="slide" id="id6">
+<h1>文字</h1>
+<div class="handout container">
+<a class="reference external" href="http://blog.derjohng.com/2006/04/12/takahashi-method-%E7%B0%A1%E5%A0%B1/">Takahashi-method 幻灯风格</a>
+源自 Ruby 专家高橋征義(Masayoshi Takahashi)</div>
+<p class="center takahashi9">巨大</p>
+</div>
+<div class="slide" id="id7">
+<h1>幻灯</h1>
+<div class="handout container">
+<a class="reference external" href="http://blog.derjohng.com/2006/04/12/takahashi-method-%E7%B0%A1%E5%A0%B1/">Takahashi-method 幻灯风格</a>
+源自 Ruby 专家高橋征義(Masayoshi Takahashi)</div>
+<p class="center takahashi9">很多</p>
+</div>
+<div class="slide" id="id8">
+<h1>播放</h1>
+<div class="handout container">
+<a class="reference external" href="http://blog.derjohng.com/2006/04/12/takahashi-method-%E7%B0%A1%E5%A0%B1/">Takahashi-method 幻灯风格</a>
+源自 Ruby 专家高橋征義(Masayoshi Takahashi)</div>
+<p class="center takahashi9"><span class="orange">快</span></p>
+</div>
+<div class="slide" id="id9">
+<h1>播放</h1>
+<div class="handout container">
+<a class="reference external" href="http://blog.derjohng.com/2006/04/12/takahashi-method-%E7%B0%A1%E5%A0%B1/">Takahashi-method 幻灯风格</a>
+源自 Ruby 专家高橋征義(Masayoshi Takahashi)</div>
+<p class="center takahashi8">很<span class="orange">快</span>!</p>
+</div>
+<div class="slide" id="id10">
+<h1>播放</h1>
+<div class="handout container">
+<a class="reference external" href="http://blog.derjohng.com/2006/04/12/takahashi-method-%E7%B0%A1%E5%A0%B1/">Takahashi-method 幻灯风格</a>
+源自 Ruby 专家高橋征義(Masayoshi Takahashi)</div>
+<p class="center takahashi7">非常<span class="orange">快</span>!</p>
+</div>
+<div class="slide" id="id11">
+<h1>所以:</h1>
+<div class="handout container">
+<a class="reference external" href="http://blog.derjohng.com/2006/04/12/takahashi-method-%E7%B0%A1%E5%A0%B1/">Takahashi-method 幻灯风格</a>
+源自 Ruby 专家高橋征義(Masayoshi Takahashi)</div>
+<p class="center takahashi10"><span class="orange">听</span></p>
+</div>
+<div class="slide" id="id12">
+<h1>感谢</h1>
+<div class="handout container">
+提供这一交流平台 <a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">C<span class="orange">OS</span></p>
+<p class="takahashi8">CU<span class="orange">P</span></p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="brief">
+<h1>&lt;brief/&gt;</h1>
+<div class="handout container">
+... <a class="reference external" href="http://www.zhgdg.org"><img alt="zhgdg" src="i/id/ZHGDG_LOGO_h32.png" /></a></div>
+<ul class="takahashi simple">
+<li><span class="orange">5' 我是谁</span></li>
+<li><span class="silver">5' 在作什么</span></li>
+<li><span class="silver">5' 为什么作</span></li>
+<li><span class="silver">15' DevRel</span></li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id13">
+<h1>&lt;Zoom.Quiet&gt;</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<img alt="是也乎,是也乎" class="takahashi align-center" src="i/id/100514-zq-eye.png" />
+<a class="takahashi reference external image-reference" href="http://zoomquiet.org"><img alt="Zoom.Quiet" class="align-center" src="i/map/50ren-ZoomQuiet-s5-v800.png" /></a>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="dama">
+<h1>#DAMA</h1>
+<div class="handout container">
+community grandma ;-} <a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi9"><a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet">大妈</a></p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id15">
+<h1>#DAMA</h1>
+<div class="handout container">
+工作年限 <a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi9">15+</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id16">
+<h1>#DAMA</h1>
+<div class="handout container">
+社区深入 <a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi9">10+</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="cmcm-com">
+<h1>CMCM.com</h1>
+<div class="handout container">
+成立刚3年多 <a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<a class="takahashi7 reference external image-reference" href="http://cmcm.com"><img alt="i/snap/cmcm.png" class="align-center" src="i/snap/cmcm.png" style="height: 400px;" /></a>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id17">
+<h1>CMCM.com</h1>
+<div class="handout container">
+核心产品 <a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<a class="takahashi7 reference external image-reference" href="http://cmcm.com"><img alt="i/snap/cm-cms.png" class="align-center" src="i/snap/cm-cms.png" style="height: 400px;" /></a>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id18">
+<h1>CMCM.com</h1>
+<div class="handout container">
+核心产品 <a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<a class="takahashi7 reference external image-reference" href="http://cmcm.com"><img alt="i/snap/cm-brower-doctor.png" class="align-center" src="i/snap/cm-brower-doctor.png" style="height: 400px;" /></a>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id19">
+<h1>CMCM.com</h1>
+<div class="handout container">
+By MAU; accrording to iUser Tracker of iResearch Mar 2014 data</div>
+<p class="takahashi10"><span class="orange">#1</span></p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id20">
+<h1>CMCM.com</h1>
+<div class="handout container">
+月活跃用户(亿) <a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi9">3.62</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="cleanmaster">
+<h1>CleanMaster</h1>
+<div class="handout container">
+月活跃用户(亿) <a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi9">1.4</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id21">
+<h1>CleanMaster</h1>
+<div class="handout container">
+国家工具榜第一 <a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi9">50+</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id22">
+<h1>14.5.8</h1>
+<div class="handout container">
+&gt;63% 海外 <a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">NYSE</p>
+<p class="takahashi8"><span class="orange">CMCM</span></p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id23">
+<h1>&lt;brief/&gt;</h1>
+<div class="handout container">
+... <a class="reference external" href="http://www.zhgdg.org"><img alt="zhgdg" src="i/id/ZHGDG_LOGO_h32.png" /></a></div>
+<ul class="takahashi simple">
+<li><span class="gray">5' 我是谁</span></li>
+<li><span class="orange">5' 在作什么</span></li>
+<li><span class="silver">5' 为什么作</span></li>
+<li><span class="silver">15' DevRel</span></li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id24">
+<h1>CMCM.com</h1>
+<div class="handout container">
+成立刚3年多 <a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<a class="takahashi7 reference external image-reference" href="http://cmcm.com"><img alt="i/snap/cmcm.png" class="align-center" src="i/snap/cmcm.png" style="height: 400px;" /></a>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="oss-cmcm">
+<h1>OSS.CMCM</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi9">OSS</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id25">
+<h1>OSS.CMCM</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">LAMP<span class="orange">s</span></p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id26">
+<h1>OSS.CMCM</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">L<span class="orange">N</span>MPs</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="nosql-oss-cmcm">
+<h1>NoSQL.OSS.CMCM</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">NoSQL</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id27">
+<h1>NoSQL.OSS.CMCM</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi">mongoDB</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id28">
+<h1>NoSQL.OSS.CMCM</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi7">MySQL</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id29">
+<h1>NoSQL.OSS.CMCM</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi7">Redis</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id30">
+<h1>NoSQL.OSS.CMCM</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi7">LevelDB</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id31">
+<h1>NoSQL.OSS.CMCM</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">SSDB</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id32">
+<h1>NoSQL.OSS.CMCM</h1>
+<div class="handout container">
+猎豹浏览器的母体 <a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi">Chromium</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id33">
+<h1>OSS.CMCM</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi5">开源卫士</p>
+<p class="takahashi4"><a class="reference external" href="http://code.ijinshan.com/api/">code.ijinshan</a></p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="api-oss-cmcm">
+<h1>API.OSS.CMCM</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">云安全</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id34">
+<h1>开发者关系管理部</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi5"><span class="orange">D</span><sub>eveloper</sub>
+<span class="orange">R</span><sub>elation</sub>
+<span class="orange">M</span><sub>anagement</sub></p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="drm-cmcm">
+<h1>DRM.CMCM</h1>
+<div class="handout container">
+<ul class="simple">
+<li>COSCUP/HOTCON</li>
+<li>w3c</li>
+<li>PyConChina</li>
+<li>...</li>
+</ul>
+</div>
+<p class="takahashi9">赞助</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id35">
+<h1>DRM.CMCM</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi9">组织</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id36">
+<h1>DRM.CMCM</h1>
+<div class="handout container">
+<ul class="simple">
+<li>5/18 台北</li>
+<li>6/26 旧金山</li>
+</ul>
+</div>
+<p class="takahashi7">CMClub</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id37">
+<h1>DRM.CMCM</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi9">比赛</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id38">
+<h1>DRM.CMCM</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi9">翻译</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id39">
+<h1>DRM.CMCM</h1>
+<div class="handout container">
+<ul class="simple">
+<li>场地</li>
+<li>经验</li>
+<li>流量</li>
+</ul>
+</div>
+<p class="takahashi9">分享</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id40">
+<h1>DRM.CMCM</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi9">投资</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id41">
+<h1>DRM.CMCM</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi9">思考</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id42">
+<h1>DRM.CMCM</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi9">支持</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id43">
+<h1>DRM.CMCM</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi9">GDG</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id44">
+<h1>&lt;brief/&gt;</h1>
+<div class="handout container">
+... <a class="reference external" href="http://www.zhgdg.org"><img alt="zhgdg" src="i/id/ZHGDG_LOGO_h32.png" /></a></div>
+<ul class="takahashi simple">
+<li><span class="gray">5' 我是谁</span></li>
+<li><span class="gray">5' 在作什么</span></li>
+<li><span class="orange">5' 为什么作</span></li>
+<li><span class="silver">15' DevRel</span></li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id45">
+<h1>开发者关系</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">DevRel</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="google">
+<h1>Google</h1>
+<div class="handout container">
+大公司才有 <a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">2007</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id46">
+<h1>为了培育</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">平台</p>
+<p class="takahashi8">生态</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id47">
+<h1>和开发者</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">保持</p>
+<p class="takahashi8">接触</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id48">
+<h1>和开发者</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">互惠</p>
+<p class="takahashi8">互利</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id49">
+<h1>&lt;brief/&gt;</h1>
+<div class="handout container">
+... <a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="takahashi simple">
+<li><span class="gray">5' 我是谁</span></li>
+<li><span class="gray">5' 在作什么</span></li>
+<li><span class="gray">5' 为什么作</span></li>
+<li><span class="orange">15' DevRel</span></li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id50">
+<h1>DevRel</h1>
+<div class="handout container">
+社区的社区 <a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8"><a class="reference external" href="http://devrel.info">.info</a></p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id51">
+<h1>持续的反省:什么是...</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi9">社区?</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id52">
+<h1>#社区</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi9">兰学<span class="orange">!</span></p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id53">
+<h1>#社区</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">相对</p>
+<p class="takahashi8"><span class="orange">四</span>固</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id54">
+<h1>#社区: 相对固定</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi9">人</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id55">
+<h1>#社区: 相对固定</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi9">场所</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id56">
+<h1>#社区: 相对固定</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi9">事儿</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id57">
+<h1>#社区: 相对固定</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi9">目标</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id58">
+<h1>#社区: 分类</h1>
+<div class="handout container">
+CSDN <a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi9">媒体</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id59">
+<h1>#社区: 分类</h1>
+<div class="handout container">
+Oracle <a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi9">产品</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id60">
+<h1>#社区: 分类</h1>
+<div class="handout container">
+CPyUG <a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi9">技术</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id61">
+<h1>#社区: 分类</h1>
+<div class="handout container">
+MySQL <a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi9">混合</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id62">
+<h1>#社区: 区分</h1>
+<div class="handout container">
+指标 <a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi9"><span class="orange">KPI</span></p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id63">
+<h1>庙堂</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi7">COPU</p>
+<a class="takahashi7 reference external image-reference" href="http://www.copu.org.cn/node/1425"><img alt="i/logo/copu_logo.png" class="align-center" src="i/logo/copu_logo.png" /></a>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id64">
+<h1>江湖</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8"><sup>*</sup>LUG</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id65">
+<h1>合法性</h1>
+<div class="handout container">
+98.10 <a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi5">社会团体登</p>
+<p class="takahashi5">记管理条例</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id66">
+<h1>#社区 困境</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">定位</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id67">
+<h1>#社区 困境</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">资金</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id68">
+<h1>#社区 困境</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">知识</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id69">
+<h1>#社区 困境</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">信任</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id70">
+<h1>#社区 困境</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">参与</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id71">
+<h1>#社区 困境</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8"><span class="orange">监管</span></p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id72">
+<h1>#社区 困境:背景</h1>
+<div class="handout container">
+每年新增毕业生 <a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8"><span class="orange">700+</span></p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id73">
+<h1>#社区 困境:背景</h1>
+<div class="handout container">
+全球独创的囧境 <a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">被就业</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id74">
+<h1>#社区 困境</h1>
+<div class="handout container">
+社会性的,整体的 <a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">焦虑</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id75">
+<h1>自由軟體鑄造場</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<a class="takahashi7 reference external image-reference" href="http://www.openfoundry.org/tw/about"><img alt="i/logo/200px-Ossf-logo.jpg" class="align-center" src="i/logo/200px-Ossf-logo.jpg" style="height: 400px;" /></a>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id76">
+<h1>#社区 台湾 大学</h1>
+<div class="handout container">
+存在 Democracy <a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8"><span class="orange">德</span>先生</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id77">
+<h1>#社区 台湾 大学</h1>
+<div class="handout container">
+存在 Science <a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8"><span class="orange">赛</span>先生</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id78">
+<h1>#社区 台湾</h1>
+<div class="handout container">
+找到了结合点 <a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<a class="takahashi7 reference external image-reference" href="http://www.openfoundry.org/tw/about"><img alt="i/logo/g0v-about-en.png" class="align-center" src="i/logo/g0v-about-en.png" style="height: 500px;" /></a>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id79">
+<h1>#社区 台湾 应该</h1>
+<div class="handout container">
+大陆弟兄们一把 <a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi10"><span class="orange">拉</span></p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="summary">
+<h1>summary</h1>
+<div class="handout container">
+always can remember things in meet: 7+-2 ;-) <a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="incremental takahashi simple">
+<li>CMCM在认真实践 DevRel</li>
+<li>开源在大陆<span class="silver">吡吡吡</span></li>
+<li>台湾开源的正能量应该传播</li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="end-of-end">
+<h1>end of end ...</h1>
+<div class="handout container">
+Good Book... <a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<a class="takahashi reference external image-reference" href="http://http://book.douban.com/subject/3142280/"><img alt="梦断代码" class="align-center" src="i/s10403125_code_dream.jpg" /></a>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="vertion">
+<h1>&lt;Vertion/&gt;</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="simple">
+<li>130703 整体重构</li>
+<li>130701 增补细节</li>
+<li>130501 prototype</li>
+<li>130429 desided</li>
+</ul>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">feedback:</th><td class="field-body"><a class="reference external" href="mailto:zoomquiet+coscup&#64;gmail.com">zoomquiet+coscup&#64;gmail.com</a></td>
+</tr>
+<tr class="field"><th class="field-name">URI:</th><td class="field-body"><a class="reference external" href="http://s5.zoomquiet.io/140703-deverl4cmcm/">http://s5.zoomquiet.io/140703-deverl4cmcm/</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="slide" id="id80">
+<h1>&lt;Zoom.Quiet/&gt;</h1>
+<div class="handout container">
+本命+4,有娃有房,专业大妈  <a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<a class="takahashi reference external image-reference" href="http://weibo.com/zoomquiet"><img alt="i/foto/120826_niuniu.png" class="align-center" src="i/foto/120826_niuniu.png" /></a>
+</div>
+<div class="slide" id="id81">
+<h1>#DAMA</h1>
+<div class="handout container">
+工作年限 <a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">15+</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id82">
+<h1>#DAMA: 自证</h1>
+<div class="handout container">
+gmail 绑定列表能力上限 <a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">200</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="dama-2003">
+<h1>#DAMA: 2003~</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">CZUG</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="dama-2004">
+<h1>#DAMA: 2004~</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">啄木鸟</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="dama-2005">
+<h1>#DAMA: 2005~</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">CP<sub>y</sub>UG</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="dama-2006">
+<h1>#DAMA: 2006~</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">OBP</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="publish">
+<h1>2009-09-01 publish</h1>
+<div class="handout container">
+<ul class="simple">
+<li>the OpenBookProject &quot;Lovely Python&quot; <a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></li>
+</ul>
+</div>
+<a class="takahashi1 reference external image-reference" href="http://book.douban.com/subject/3884108/"><img alt="可愛的Python" class="align-center" src="i/090902-lovpy.jpg" /></a>
+<div class="notes container">
+<ul class="simple">
+<li>snap4ZQMBP_apac2010.png</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id83">
+<h1>#DAMA: 2006~</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">ZEUUX</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="dama-2007">
+<h1>#DAMA: 2007~</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">ECUG</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="dama-2008">
+<h1>#DAMA: 2008~</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi5">教育大发现</p>
+<p class="takahashi4">S<sub>ocial</sub>L<sub>earn</sub>L<sub>ab</sub></p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="dama-2010">
+<h1>#DAMA: 2010~</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi5">开源卫士</p>
+<p class="takahashi3">code.ijinshan</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="dama-2011">
+<h1>#DAMA: 2011~</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi7">Open</p>
+<p class="takahashi7">Resty</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="dama-2013">
+<h1>#DAMA: 2013~</h1>
+<div class="handout container">
+<a class="reference external" href="http://zoomquiet.io"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">珠海GDG</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id84">
+<h1>&lt;/Zoom.Quiet&gt;</h1>
+<div class="handout container">
+<ul class="simple">
+<li>Pure Pythoner，FreeSoftware Fundamentalists!</li>
+<li>focus Social Edu.,knowledge manage,enjoy SiFi/photograph</li>
+<li>try base Pythonic, make Chinese jump into OSS, enjoy learnning/invention/coding/sharing...</li>
+</ul>
+</div>
+<p class="takahashi8">(^.^)</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

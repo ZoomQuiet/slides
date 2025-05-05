@@ -1,0 +1,2531 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.11: http://docutils.sourceforge.net/" />
+<meta name="version" content="S5 1.1" />
+<title>从游戏开始</title>
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 7614 2013-02-21 15:55:51Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title, .code .error {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+pre.code .ln { color: grey; } /* line numbers */
+pre.code, code { background-color: #eeeeee }
+pre.code .comment, code .comment { color: #5C6576 }
+pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
+pre.code .literal.string, code .literal.string { color: #0C5404 }
+pre.code .name.builtin, code .name.builtin { color: #352B84 }
+pre.code .deleted, code .deleted { background-color: #DEB0A1}
+pre.code .inserted, code .inserted { background-color: #A3D289}
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+/* "booktabs" style (no vertical lines) */
+table.docutils.booktabs {
+  border: 0px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-collapse: collapse;
+}
+table.docutils.booktabs * {
+  border: 0px;
+}
+table.docutils.booktabs th {
+  border-bottom: thin solid;
+  text-align: left;
+}
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+<!-- configuration parameters -->
+<meta name="defaultView" content="slideshow" />
+<meta name="controlVis" content="hidden" />
+<!-- style sheet links -->
+<script src="ui/freedom/slides.js" type="text/javascript"></script>
+<link rel="stylesheet" href="ui/freedom/slides.css"
+      type="text/css" media="projection" id="slideProj" />
+<link rel="stylesheet" href="ui/freedom/outline.css"
+      type="text/css" media="screen" id="outlineStyle" />
+<link rel="stylesheet" href="ui/freedom/print.css"
+      type="text/css" media="print" id="slidePrint" />
+<link rel="stylesheet" href="ui/freedom/opera.css"
+      type="text/css" media="projection" id="operaFix" />
+</head>
+<body>
+<div class="layout">
+<div id="controls"></div>
+<div id="currentSlide"></div>
+<div id="header">
+
+</div>
+<div id="footer">
+<h1><sup>从</sup>游戏开始</h1>
+<h2><a class="reference external" href="http://code.google.com/p/openbookproject/wiki/ZoomQuiet">Zoom.Quiet</a> v14.05.04 <a class="reference external" href="http://creativecommons.org/licenses/by-nc-sa/2.5/cn/"><img alt="(CC)by-nc-sa 许可证" src="i/icon/cc-byncnd-80x15.png" /></a> 推荐用 <a class="reference external" href="http://www.mozilla.com/firefox/">FireFox</a> 获得最佳游览效果</h2>
+</div>
+</div>
+<div class="presentation">
+<div class="slide" id="slide0">
+<h1 class="title"><sup>从</sup>游戏开始</h1>
+
+<!-- Definitions of interpreted text roles (classes) for S5/HTML data. -->
+<!-- This data file has been placed in the public domain. -->
+<!-- Colours
+======= -->
+<!-- Text Sizes
+========== -->
+<!-- Display in Slides (Presentation Mode) Only
+========================================== -->
+<!-- Display in Outline Mode Only
+============================ -->
+<!-- Display in Print Only
+===================== -->
+<!-- Display in Handout Mode Only
+============================ -->
+<!-- Incremental Display
+=================== -->
+<p>～一个有关算法的虚拟故事 (powered by rst2S5)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Authors:</th><td class="field-body">ZoomQuiet+gdg[AT]gmail.com</td>
+</tr>
+<tr class="field"><th class="field-name">URL:</th><td class="field-body"><a class="reference external" href="http://s5.zoomquiet.io/140511-hoa6-start4game/">http://s5.zoomquiet.io/140511-hoa6-start4game/</a></td>
+</tr>
+</tbody>
+</table>
+<!-- This document has been placed in the CC domain. -->
+<!-- 图片定义区 -->
+
+</div>
+<div class="slide" id="id4">
+<h1>&lt;免责/&gt;</h1>
+<div class="handout container">
+山寨的，非业界公认的，个人体验为基础!
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<dl class="takahashi1 docutils">
+<dt>参考所有同好行为总结而得</dt>
+<dd><ul class="first last simple">
+<li>一切资料来自网络互动挖掘</li>
+<li>一切想法来自日常学习工作</li>
+<li>一切体悟来自各种沟通交流</li>
+<li>一切知识来自社区分享印证</li>
+<li>一切经验来自个人失败体验</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="slide" id="id5">
+<h1>高橋流!</h1>
+<div class="handout container">
+<a class="reference external" href="http://blog.derjohng.com/2006/04/12/takahashi-method-%E7%B0%A1%E5%A0%B1/">Takahashi-method 幻灯风格</a>
+源自 Ruby 专家高橋征義(Masayoshi Takahashi)</div>
+<a class="center reference external image-reference" href="http://blog.derjohng.com/2006/04/12/takahashi-method-%E7%B0%A1%E5%A0%B1/"><img alt="高橋流" class="align-center" src="pix/Takahashi-method.jpg" style="height: 500px;" /></a>
+</div>
+<div class="slide" id="id6">
+<h1>文字</h1>
+<div class="handout container">
+<a class="reference external" href="http://blog.derjohng.com/2006/04/12/takahashi-method-%E7%B0%A1%E5%A0%B1/">Takahashi-method 幻灯风格</a>
+源自 Ruby 专家高橋征義(Masayoshi Takahashi)</div>
+<p class="center takahashi9">巨大</p>
+</div>
+<div class="slide" id="id7">
+<h1>幻灯</h1>
+<div class="handout container">
+<a class="reference external" href="http://blog.derjohng.com/2006/04/12/takahashi-method-%E7%B0%A1%E5%A0%B1/">Takahashi-method 幻灯风格</a>
+源自 Ruby 专家高橋征義(Masayoshi Takahashi)</div>
+<p class="center takahashi9">很多</p>
+</div>
+<div class="slide" id="id8">
+<h1>播放</h1>
+<div class="handout container">
+<a class="reference external" href="http://blog.derjohng.com/2006/04/12/takahashi-method-%E7%B0%A1%E5%A0%B1/">Takahashi-method 幻灯风格</a>
+源自 Ruby 专家高橋征義(Masayoshi Takahashi)</div>
+<p class="center takahashi9"><span class="orange">快</span></p>
+</div>
+<div class="slide" id="id9">
+<h1>播放</h1>
+<div class="handout container">
+<a class="reference external" href="http://blog.derjohng.com/2006/04/12/takahashi-method-%E7%B0%A1%E5%A0%B1/">Takahashi-method 幻灯风格</a>
+源自 Ruby 专家高橋征義(Masayoshi Takahashi)</div>
+<p class="center takahashi8">很<span class="orange">快</span>!</p>
+</div>
+<div class="slide" id="id10">
+<h1>播放</h1>
+<div class="handout container">
+<a class="reference external" href="http://blog.derjohng.com/2006/04/12/takahashi-method-%E7%B0%A1%E5%A0%B1/">Takahashi-method 幻灯风格</a>
+源自 Ruby 专家高橋征義(Masayoshi Takahashi)</div>
+<p class="center takahashi7">非常<span class="orange">快</span>!</p>
+</div>
+<div class="slide" id="id11">
+<h1>所以:</h1>
+<div class="handout container">
+<a class="reference external" href="http://blog.derjohng.com/2006/04/12/takahashi-method-%E7%B0%A1%E5%A0%B1/">Takahashi-method 幻灯风格</a>
+源自 Ruby 专家高橋征義(Masayoshi Takahashi)</div>
+<p class="center takahashi10">听</p>
+</div>
+<div class="slide" id="brief">
+<h1>&lt;brief/&gt;</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="takahashi simple">
+<li><span class="orange">3' 有关</span></li>
+<li><span class="silver">5' 因缘</span></li>
+<li><span class="silver">15' 次日</span></li>
+<li><span class="silver">15' 守夜</span></li>
+<li><span class="silver">15' 终篇</span></li>
+<li><span class="silver">5' 检讨</span></li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id12">
+<h1>&lt;Zoom.Quiet&gt;</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<img alt="是也乎,是也乎" class="takahashi align-center" src="i/id/100514-zq-eye.png" />
+<a class="takahashi reference external image-reference" href="http://zoomquiet.org"><img alt="Zoom.Quiet" class="align-center" src="i/map/50ren-ZoomQuiet-s5-v800.png" /></a>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id13">
+<h1>有称...</h1>
+<div class="handout container">
+;-} <a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">周导</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id14">
+<h1>其实...</h1>
+<div class="handout container">
+基调是分享交流;-} <a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8"><a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet">大妈</a></p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id16">
+<h1>牛妞</h1>
+<div class="handout container">
+\ (^o^) / 596d</div>
+<img alt="表情牛妞" class="align-center" src="i/foto/niuniu110105.jpeg" style="height: 700px;" />
+<div class="notes container">
+<ul class="simple">
+<li>我的女儿刚刚一岁半,非常牛,,,脾气牛,头脑牛,虽然不会说话,但是已经能指挥我们干活了...</li>
+<li>120426-niuniu-表情帝</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id17">
+<h1>牛妞</h1>
+<div class="handout container">
+\ (^o^) / 1096d</div>
+<img alt="表情牛妞" class="align-center" src="i/foto/120426-niuniu-表情帝.jpg" style="height: 700px;" />
+<div class="notes container">
+<ul class="simple">
+<li>我的女儿刚刚一岁半,非常牛,,,脾气牛,头脑牛,虽然不会说话,但是已经能指挥我们干活了...</li>
+<li>120426-niuniu-表情帝</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id18">
+<h1>&lt;/Zoom.Quiet&gt;</h1>
+<div class="handout container">
+<ul class="simple">
+<li>纯种Pythoner，自由软件原教旨主义者</li>
+<li>关注社会化教育及知识管理；喜爱SF和摄影。</li>
+<li>尝试使用Pythonic体验感化国人主动进入自由软件世界体验/学习/再创作</li>
+</ul>
+</div>
+<p class="takahashi8">(^.^)</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id19">
+<h1>&lt;brief/&gt;</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="takahashi simple">
+<li><span class="gray">3' 有关</span></li>
+<li><span class="orange">5' 因缘</span></li>
+<li><span class="silver">15' 次日</span></li>
+<li><span class="silver">15' 守夜</span></li>
+<li><span class="silver">15' 终篇</span></li>
+<li><span class="silver">5' 检讨</span></li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id20">
+<h1>游戏.</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="takahashi simple">
+<li>把五个数字 56789,</li>
+<li>放到 [][][] * [][],</li>
+<li>令结果最大.</li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id21">
+<h1>当然的...</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi10">Py</p>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="calc-py">
+<h1>calc.py</h1>
+<div class="handout container">
+硬找 <a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">seq:</span>
+    <span style="color: #f8f8f2">product</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">(i[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">]</span><span style="color: #f92672">*</span><span style="color: #ae81ff">100</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">i[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">]</span><span style="color: #f92672">*</span><span style="color: #ae81ff">10</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">i[</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">])</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">(i[</span><span style="color: #ae81ff">3</span><span style="color: #f8f8f2">]</span><span style="color: #f92672">*</span><span style="color: #ae81ff">10</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">i[</span><span style="color: #ae81ff">4</span><span style="color: #f8f8f2">])</span>
+    <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">product</span> <span style="color: #f92672">&gt;</span> <span style="color: #f8f8f2">maximum:</span>
+       <span style="color: #f8f8f2">maximum</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">product</span>
+       <span style="color: #f8f8f2">max_item</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">i</span>
+    <span style="color: #66d9ef">elif</span> <span style="color: #f8f8f2">product</span> <span style="color: #f92672">==</span> <span style="color: #f8f8f2">maximum:</span>
+       <span style="color: #f8f8f2">max_item</span> <span style="color: #f92672">+=</span> <span style="color: #e6db74">&#39;,&#39;</span><span style="color: #f92672">+</span><span style="color: #f8f8f2">i</span>
+<span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">max_item,</span> <span style="color: #f8f8f2">maximum</span>
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="permute1-py">
+<h1>permute1.py</h1>
+<div class="handout container">
+自动生成seq <a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #66d9ef">def</span> <span style="color: #a6e22e">permute</span><span style="color: #f8f8f2">(seq):</span>
+  <span style="color: #f8f8f2">result</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">[]</span>
+  <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">a</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">seq:</span>
+    <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">b</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">seq:</span>
+      <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">c</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">seq:</span>
+        <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">d</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">seq:</span>
+          <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">e</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">seq:</span>
+            <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">a</span><span style="color: #f92672">!=</span><span style="color: #f8f8f2">b</span> <span style="color: #f92672">and</span> <span style="color: #f8f8f2">a</span><span style="color: #f92672">!=</span><span style="color: #f8f8f2">c</span> <span style="color: #f92672">and</span> <span style="color: #f8f8f2">a</span><span style="color: #f92672">!=</span><span style="color: #f8f8f2">d</span> <span style="color: #f92672">and</span> <span style="color: #f8f8f2">a</span><span style="color: #f92672">!=</span><span style="color: #f8f8f2">e</span> <span style="color: #f92672">and</span> \
+               <span style="color: #f8f8f2">b</span><span style="color: #f92672">!=</span><span style="color: #f8f8f2">c</span> <span style="color: #f92672">and</span> <span style="color: #f8f8f2">b</span><span style="color: #f92672">!=</span><span style="color: #f8f8f2">d</span> <span style="color: #f92672">and</span> <span style="color: #f8f8f2">b</span><span style="color: #f92672">!=</span><span style="color: #f8f8f2">e</span> <span style="color: #f92672">and</span> \
+               <span style="color: #f8f8f2">c</span><span style="color: #f92672">!=</span><span style="color: #f8f8f2">d</span> <span style="color: #f92672">and</span> <span style="color: #f8f8f2">c</span><span style="color: #f92672">!=</span><span style="color: #f8f8f2">e</span> <span style="color: #f92672">and</span> <span style="color: #f8f8f2">d</span><span style="color: #f92672">!=</span><span style="color: #f8f8f2">e:</span>
+              <span style="color: #f8f8f2">result</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">append(</span><span style="color: #e6db74">&#39;&#39;</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">join([a,b,c,d,e]))</span>
+  <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">result</span>
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id22">
+<h1>结果?</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #f8f8f2">$ </span>python permute1.py
+Maxmum at 87596 ,product 84000
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id23">
+<h1>然后呢...</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">通用化</p>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id24">
+<h1>只能...</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">递归</p>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id25">
+<h1>排列</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="takahashi simple">
+<li>5 个数字的排列</li>
+<li>先挑一个数, 有五种选择</li>
+<li>挑第二个数时只剩下四个选择</li>
+<li>共有 5*4*3*2*1 = 120 个排列</li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id26">
+<h1>递归函式</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="takahashi simple">
+<li>先在 56789 中选出 5</li>
+<li>剩 6789 再次调用函数,</li>
+<li>得到所有以 5 为字头的排列</li>
+<li>同理,逐级求解</li>
+<li>直到要求的排列只剩下一个数</li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="permute2-py">
+<h1>permute2.py</h1>
+<div class="handout container">
+自动生成seq <a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #66d9ef">def</span> <span style="color: #a6e22e">permute</span><span style="color: #f8f8f2">(seq):</span>
+  <span style="color: #f8f8f2">l</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">len(seq)</span>
+  <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">l</span> <span style="color: #f92672">==</span> <span style="color: #ae81ff">1</span><span style="color: #f8f8f2">:</span>
+    <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">[seq]</span>
+  <span style="color: #66d9ef">else</span><span style="color: #f8f8f2">:</span>
+    <span style="color: #f8f8f2">res</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">[]</span>
+    <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">range(len(seq)):</span>
+      <span style="color: #f8f8f2">rest</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">seq[:i]</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">seq[i</span><span style="color: #f92672">+</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">:]</span>
+      <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">x</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">permute(rest):</span>
+        <span style="color: #f8f8f2">res</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">append(seq[i:i</span><span style="color: #f92672">+</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">x)</span>
+    <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">res</span>
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id27">
+<h1>permute2.py</h1>
+<div class="handout container">
+自动生成seq <a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #f8f8f2">seq</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">list(</span><span style="color: #e6db74">&quot;1234&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">thelist</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">permute(seq)</span>
+<span style="color: #f8f8f2">thelist</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">[</span> <span style="color: #e6db74">&#39;&#39;</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">join(x)</span> <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">x</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">thelist</span> <span style="color: #f8f8f2">]</span>
+<span style="color: #66d9ef">print</span> <span style="color: #f8f8f2">thelist</span>
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id28">
+<h1>permute2.py</h1>
+<div class="handout container">
+自动生成seq <a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #f8f8f2">$ </span>python permute2.py
+<span style="color: #f92672">[</span><span style="color: #e6db74">&#39;1234&#39;</span>, <span style="color: #e6db74">&#39;1243&#39;</span>, <span style="color: #e6db74">&#39;1324&#39;</span>, <span style="color: #e6db74">&#39;1342&#39;</span>, <span style="color: #e6db74">&#39;1423&#39;</span>,
+<span style="color: #e6db74">&#39;1432&#39;</span>, <span style="color: #e6db74">&#39;2134&#39;</span>, <span style="color: #e6db74">&#39;2143&#39;</span>, <span style="color: #e6db74">&#39;2314&#39;</span>,
+<span style="color: #e6db74">&#39;2341&#39;</span>, <span style="color: #e6db74">&#39;2413&#39;</span>, <span style="color: #e6db74">&#39;2431&#39;</span>, <span style="color: #e6db74">&#39;3124&#39;</span>,
+<span style="color: #e6db74">&#39;3142&#39;</span>, <span style="color: #e6db74">&#39;3214&#39;</span>, <span style="color: #e6db74">&#39;3241&#39;</span>, <span style="color: #e6db74">&#39;3412&#39;</span>, <span style="color: #e6db74">&#39;3421&#39;</span>,
+<span style="color: #e6db74">&#39;4123&#39;</span>, <span style="color: #e6db74">&#39;4132&#39;</span>, <span style="color: #e6db74">&#39;4213&#39;</span>, <span style="color: #e6db74">&#39;4231&#39;</span>, <span style="color: #e6db74">&#39;4312&#39;</span>, <span style="color: #e6db74">&#39;4321&#39;</span><span style="color: #f92672">]</span>
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id29">
+<h1>但是...</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">能再</p>
+<p class="takahashi8">快卟?</p>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id30">
+<h1>发现...</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="takahashi simple">
+<li>其实不必 l=1 结束</li>
+<li>因为 l=2 时</li>
+<li>排列必定是 <tt class="docutils literal">[[0,1], [1,0]]</tt></li>
+<li>是之谓 unroll</li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="permute3-py">
+<h1>permute3.py</h1>
+<div class="handout container">
+自动生成seq <a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #66d9ef">def</span> <span style="color: #a6e22e">permute</span><span style="color: #f8f8f2">(seq):</span>
+  <span style="color: #f8f8f2">l</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">len(seq)</span>
+  <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">l</span> <span style="color: #f92672">&lt;=</span> <span style="color: #ae81ff">2</span><span style="color: #f8f8f2">:</span>
+    <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">l</span> <span style="color: #f92672">==</span> <span style="color: #ae81ff">2</span><span style="color: #f8f8f2">:</span> <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">[</span> <span style="color: #f8f8f2">seq,</span> <span style="color: #f8f8f2">[seq[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">],</span> <span style="color: #f8f8f2">seq[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">]]</span> <span style="color: #f8f8f2">]</span>
+    <span style="color: #66d9ef">else</span><span style="color: #f8f8f2">:</span>      <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">[seq]</span>
+  <span style="color: #66d9ef">else</span><span style="color: #f8f8f2">:</span>
+    <span style="color: #f8f8f2">res</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">[]</span>
+    <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">range(len(seq)):</span>
+      <span style="color: #f8f8f2">rest</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">seq[:i]</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">seq[i</span><span style="color: #f92672">+</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">:]</span>
+      <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">x</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">permute(rest):</span>
+        <span style="color: #f8f8f2">res</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">append(seq[i:i</span><span style="color: #f92672">+</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">x)</span>
+    <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">res</span>
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id31">
+<h1>calc.py</h1>
+<div class="handout container">
+自动生成seq <a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #66d9ef">def</span> <span style="color: #a6e22e">calc</span><span style="color: #f8f8f2">(seq,</span> <span style="color: #f8f8f2">where):</span>
+  <span style="color: #f8f8f2">maximum,</span> <span style="color: #f8f8f2">max_item</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">[]</span>
+  <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">seq:</span>
+    <span style="color: #f8f8f2">product</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">int(i[:where])</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">int(i[where:])</span>
+    <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">product</span> <span style="color: #f92672">&gt;</span> <span style="color: #f8f8f2">maximum:</span>
+       <span style="color: #f8f8f2">maximum,</span> <span style="color: #f8f8f2">max_item</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">product,</span> <span style="color: #f8f8f2">i</span>
+    <span style="color: #66d9ef">elif</span> <span style="color: #f8f8f2">product</span> <span style="color: #f92672">==</span> <span style="color: #f8f8f2">maximum:</span>
+       <span style="color: #f8f8f2">max_item</span> <span style="color: #f92672">+=</span> <span style="color: #e6db74">&#39;,&#39;</span><span style="color: #f92672">+</span> <span style="color: #f8f8f2">i</span>
+  <span style="color: #66d9ef">print</span> <span style="color: #e6db74">&quot;Maximum at&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">max_item,</span> <span style="color: #e6db74">&quot;,product&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">maximum</span>
+
+<span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">__name__</span> <span style="color: #f92672">==</span> <span style="color: #e6db74">&quot;__main__&quot;</span><span style="color: #f8f8f2">:</span>
+  <span style="color: #f8f8f2">seq</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">[</span> <span style="color: #e6db74">&quot;56789&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #e6db74">&quot;56798&quot;</span> <span style="color: #f8f8f2">]</span>
+  <span style="color: #f8f8f2">where</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">3</span>
+  <span style="color: #f8f8f2">calc(seq,where)</span>
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id32">
+<h1>permute3.py</h1>
+<div class="handout container">
+自动生成seq <a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #f92672">import</span> <span style="color: #f8f8f2">sys</span><span style="color: #f92672">,</span> <span style="color: #f8f8f2">calc</span>
+<span style="color: #f8f8f2">seq</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">list(sys</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">argv[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">])</span>
+<span style="color: #f8f8f2">where</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">int(sys</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">argv[</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">])</span>
+<span style="color: #f8f8f2">thelist</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">[</span> <span style="color: #e6db74">&#39;&#39;</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">join(x)</span> <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">x</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">permute(seq)</span> <span style="color: #f8f8f2">]</span>
+<span style="color: #f8f8f2">Print</span> <span style="color: #e6db74">&#39;Got&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">len(thelist),</span> <span style="color: #e6db74">&#39;items.&#39;</span>
+<span style="color: #f8f8f2">calc</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">calc(thelist,</span> <span style="color: #f8f8f2">where)</span>
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id33">
+<h1>permute3.py</h1>
+<div class="handout container">
+自动生成seq <a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #f8f8f2">$ time </span>python permute3.py 56789 3
+Got 120 items.
+Maximum at 87596 ,product 84000
+
+real    0m0.040s
+user    0m0.030s
+sys     0m0.010s
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id34">
+<h1>但是...</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">能再</p>
+<p class="takahashi8">快卟?</p>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="aspn-getting-permutation-of-a-sequence">
+<h1>ASPN: <a class="reference external" href="http://code.activestate.com/recipes/126037-getting-nth-permutation-of-a-sequence/">Getting permutation of a sequence</a></h1>
+<div class="handout container">
+Python recipes « ActiveState Code <a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #66d9ef">def</span> <span style="color: #a6e22e">getPerm</span><span style="color: #f8f8f2">(seq,</span> <span style="color: #f8f8f2">index):</span>
+    <span style="color: #e6db74">&quot;Returns the &lt;index&gt;th permutation of &lt;seq&gt;&quot;</span>
+    <span style="color: #f8f8f2">seqc</span><span style="color: #f92672">=</span> <span style="color: #f8f8f2">list(seq[:])</span>
+    <span style="color: #f8f8f2">seqn</span><span style="color: #f92672">=</span> <span style="color: #f8f8f2">[seqc</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">pop()]</span>
+    <span style="color: #f8f8f2">divider</span><span style="color: #f92672">=</span> <span style="color: #ae81ff">2</span> <span style="color: #75715e"># divider is meant to be len(seqn)+1, just a bit faster</span>
+    <span style="color: #66d9ef">while</span> <span style="color: #f8f8f2">seqc:</span>
+        <span style="color: #f8f8f2">index,</span> <span style="color: #f8f8f2">new_index</span><span style="color: #f92672">=</span> <span style="color: #f8f8f2">index</span><span style="color: #f92672">//</span><span style="color: #f8f8f2">divider,</span> <span style="color: #f8f8f2">index</span><span style="color: #f92672">%</span><span style="color: #f8f8f2">divider</span>
+        <span style="color: #f8f8f2">seqn</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">insert(new_index,</span> <span style="color: #f8f8f2">seqc</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">pop())</span>
+        <span style="color: #f8f8f2">divider</span><span style="color: #f92672">+=</span> <span style="color: #ae81ff">1</span>
+    <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">seqn</span>
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id35">
+<h1>号称</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">O(n)</p>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id36">
+<h1>算法时间复杂度</h1>
+<div class="handout container">
+表示法 <a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="takahashi">
+<li><p class="first">大O函数指的是算法所耗时与输入规模之间的关系</p>
+</li>
+<li><dl class="first docutils">
+<dt>O(n^2)代表</dt>
+<dd><ul class="first last simple">
+<li>这个算法排序n个数</li>
+<li>所耗CPU时间</li>
+<li>与n的平方在同一个数量级</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id37">
+<h1>常见 <a class="reference external" href="http://zh.wikipedia.org/zh-cn/%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6">时间复杂度</a></h1>
+<div class="handout container">
+表示法 <a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="takahashi simple">
+<li>常数阶 O(1)</li>
+<li>对数阶 O(log2n)</li>
+<li>线性阶O(n)</li>
+<li>平方阶 O(n<sup>2</sup>)</li>
+<li>立方阶 O(n<sup>3</sup>)</li>
+<li>...</li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id39">
+<h1>号称</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8"><span class="orange">!</span></p>
+<p class="takahashi8">O(n)</p>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="test-py">
+<h1>test.py</h1>
+<div class="handout container">
+自动生成seq <a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #f92672">from</span> <span style="color: #f8f8f2">permute4.py</span> <span style="color: #f92672">import</span> <span style="color: #f8f8f2">permute</span>
+
+<span style="color: #f8f8f2">seq</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">list(</span><span style="color: #e6db74">&quot;1234&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">range(</span><span style="color: #ae81ff">30</span><span style="color: #f8f8f2">):</span>
+  <span style="color: #66d9ef">print</span> <span style="color: #f8f8f2">permute(seq,</span> <span style="color: #f8f8f2">i)</span>
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id40">
+<h1>test.py</h1>
+<div class="handout container">
+自动生成seq <a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #f8f8f2">$ </span>python test.py
+1234 1243 1324 1423 1342 1432 2134
+2143 3124 4123 3142 4132 2314
+2413 3214 4213 3412 4312 2341 2431
+3241 4231 3421 4321 1234 1243
+1324 1423 1342 1432
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="permute4-py">
+<h1>permute4.py</h1>
+<div class="handout container">
+<ul class="simple">
+<li>Python recipes « ActiveState Code</li>
+<li><a class="reference external" href="http://code.activestate.com/recipes/126037-getting-nth-permutation-of-a-sequence/">Getting permutation of a sequence</a></li>
+</ul>
+</div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #66d9ef">def</span> <span style="color: #a6e22e">getPerm</span><span style="color: #f8f8f2">(seq,</span> <span style="color: #f8f8f2">index):</span>
+    <span style="color: #f8f8f2">seqc</span><span style="color: #f92672">=</span> <span style="color: #f8f8f2">list(seq[:])</span>
+    <span style="color: #f8f8f2">seqn</span><span style="color: #f92672">=</span> <span style="color: #f8f8f2">[seqc</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">pop()]</span>
+    <span style="color: #f8f8f2">divider</span><span style="color: #f92672">=</span> <span style="color: #ae81ff">2</span>
+    <span style="color: #66d9ef">while</span> <span style="color: #f8f8f2">seqc:</span>
+        <span style="color: #f8f8f2">index,</span> <span style="color: #f8f8f2">new_index</span><span style="color: #f92672">=</span> <span style="color: #f8f8f2">index</span><span style="color: #f92672">/</span><span style="color: #f8f8f2">divider</span>
+            <span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">index</span><span style="color: #f92672">%</span><span style="color: #f8f8f2">divider</span>
+        <span style="color: #f8f8f2">seqn</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">insert(new_index,</span> <span style="color: #f8f8f2">seqc</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">pop())</span>
+        <span style="color: #f8f8f2">divider</span><span style="color: #f92672">+=</span> <span style="color: #ae81ff">1</span>
+    <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">seqn</span>
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id41">
+<h1>肿么的?</h1>
+<div class="handout container">
+getPerm(seq, index) <a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="takahashi simple">
+<li>不同的 index 值都传回唯一的排列</li>
+<li>而且大过 n! 的 index 会从头来</li>
+<li>divider 每次都要增加一</li>
+<li>排法又是按商余数来重整</li>
+<li>一头雾水...</li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id42">
+<h1>快?!</h1>
+<div class="handout container">
+自动生成seq <a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #f8f8f2">$ time </span>cpython permute4.py 1234567 4
+Got 5040 items.
+Maximum at 6531742 ,product 4846002
+
+real    0m0.389s
+user    0m0.370s
+sys     0m0.010s
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id43">
+<h1>但是...</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">睡<span class="orange">不</span></p>
+<p class="takahashi8">着!</p>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id44">
+<h1>&lt;brief/&gt;</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="takahashi simple">
+<li><span class="gray">3' 有关</span></li>
+<li><span class="gray">5' 因缘</span></li>
+<li><span class="orange">15' 次日</span></li>
+<li><span class="silver">15' 守夜</span></li>
+<li><span class="silver">15' 终篇</span></li>
+<li><span class="silver">5' 检讨</span></li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="python">
+<h1>Python</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi3">Slackware / RedHat / Redflag / Mandrake / Debian / XP / NT2000|3|5 / DOS / Solaris/ AIX / Unicos / OSX ...</p>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id45">
+<h1>传说...</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi3">任何递归/回溯函数都</p>
+<p class="takahashi3">可以还原成非递归的!</p>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id46">
+<h1>求排列的方法</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="takahashi simple">
+<li>5 个数取一个</li>
+<li>剩下 4 个,</li>
+<li>再取一个,</li>
+<li>剩下 3 个 ....</li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="permute5-py">
+<h1>permute5.py</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #66d9ef">def</span> <span style="color: #a6e22e">permute</span><span style="color: #f8f8f2">(seq):</span>
+  <span style="color: #f8f8f2">result</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">[]</span>
+  <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">seq:</span>
+    <span style="color: #f8f8f2">seq1</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">seq[:]</span>
+    <span style="color: #f8f8f2">seq1</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">remove(i)</span>
+    <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">j</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">seq1:</span>
+      <span style="color: #f8f8f2">seq2</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">seq1[:]</span>
+      <span style="color: #f8f8f2">seq2</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">remove(j)</span>
+      <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">l</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">seq2:</span>
+        <span style="color: #f8f8f2">seq3</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">seq2[:]</span>
+        <span style="color: #f8f8f2">seq3</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">remove(l)</span>
+        <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">m</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">seq3:</span>
+          <span style="color: #f8f8f2">seq4</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">seq3[:]</span>
+          <span style="color: #f8f8f2">seq4</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">remove(m)</span>
+          <span style="color: #f8f8f2">result</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">append(</span><span style="color: #e6db74">&#39;&#39;</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">join([i,j,l,m,seq4[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">]]))</span>
+  <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">result</span>
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id47">
+<h1>求排列的方法</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="takahashi simple">
+<li>依次创建 5, 4, 3, 2, 1 个数的列表</li>
+<li>每个都不包括之前被选的数字</li>
+<li>然后把 5 个数合起来</li>
+<li>...</li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id48">
+<h1>动态语言</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi7">自己</p>
+<p class="takahashi7"><span class="orange">写</span>自己</p>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="permute5-py-v2">
+<h1>permute5.py v2</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #66d9ef">def</span> <span style="color: #a6e22e">genfunc</span><span style="color: #f8f8f2">(n):</span>
+  <span style="color: #f8f8f2">head</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&quot;&quot;&quot;</span>
+<span style="color: #e6db74">def permute(seq0):</span>
+<span style="color: #e6db74">  result = [] &quot;&quot;&quot;</span>
+  <span style="color: #f8f8f2">boiler</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&quot;&quot;&quot;</span>
+<span style="color: #e6db74">for counter%i in seq%i:</span>
+<span style="color: #e6db74">  seq%i = seq%i[:]</span>
+<span style="color: #e6db74">  seq%i.remove(counter%i)&quot;&quot;&quot;</span>
+  <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">range(</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">,n):</span>
+    <span style="color: #f8f8f2">space</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&#39;  &#39;</span><span style="color: #f92672">*</span><span style="color: #f8f8f2">i</span>
+    <span style="color: #f8f8f2">head</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">head</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">boiler</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">replace(</span><span style="color: #e6db74">&#39;</span><span style="color: #ae81ff">\n</span><span style="color: #e6db74">&#39;</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&#39;</span><span style="color: #ae81ff">\n</span><span style="color: #e6db74">&#39;</span><span style="color: #f92672">+</span><span style="color: #f8f8f2">space)</span><span style="color: #f92672">%</span><span style="color: #f8f8f2">(i,i</span><span style="color: #f92672">-</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">,i,i</span><span style="color: #f92672">-</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">,i,i)</span>
+  <span style="color: #f8f8f2">temp</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&#39;,&#39;</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">join([</span> <span style="color: #e6db74">&#39;counter%i&#39;</span><span style="color: #f92672">%</span><span style="color: #f8f8f2">(x)</span> <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">x</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">range(</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">,n)</span> <span style="color: #f8f8f2">]</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">[</span><span style="color: #e6db74">&quot;seq%i[0]&quot;</span><span style="color: #f92672">%</span><span style="color: #f8f8f2">(n</span><span style="color: #f92672">-</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">)])</span>
+  <span style="color: #f8f8f2">head</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">head</span> <span style="color: #f92672">+</span> <span style="color: #e6db74">&#39;</span><span style="color: #ae81ff">\n</span><span style="color: #e6db74">&#39;</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">space</span> <span style="color: #f92672">+</span> <span style="color: #e6db74">&quot;  result.append(&#39;&#39;.join([%s]))&quot;</span><span style="color: #f92672">%</span><span style="color: #f8f8f2">(temp)</span>
+  <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">head</span> <span style="color: #f92672">+</span> <span style="color: #e6db74">&#39;</span><span style="color: #ae81ff">\n</span><span style="color: #e6db74">  return result</span><span style="color: #ae81ff">\n</span><span style="color: #e6db74">&#39;</span>
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id49">
+<h1>permute5.py v2 调用</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #f92672">import</span> <span style="color: #f8f8f2">sys</span>
+<span style="color: #f8f8f2">functext</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">genfunc(len(sys</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">argv[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">]))</span>
+<span style="color: #66d9ef">print</span> <span style="color: #f8f8f2">functext</span>
+<span style="color: #66d9ef">exec</span><span style="color: #f8f8f2">(functext)</span>
+<span style="color: #66d9ef">print</span> <span style="color: #f8f8f2">dir()</span>
+<span style="color: #f8f8f2">thelist</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">permute(list(sys</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">argv[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">]))</span>
+<span style="color: #66d9ef">print</span> <span style="color: #e6db74">&#39;Got&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">len(thelist),</span> <span style="color: #e6db74">&#39;items.&#39;</span>
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id50">
+<h1>permute5.py v2 运行</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #f8f8f2">$ </span>python permute5.py 12345 3
+
+def permute<span style="color: #f92672">(</span>seq0<span style="color: #f92672">)</span>:
+  <span style="color: #f8f8f2">result</span> <span style="color: #f92672">=</span> <span style="color: #f92672">[]</span>
+  <span style="color: #66d9ef">for </span>counter1 in seq0:
+    <span style="color: #f8f8f2">seq1</span> <span style="color: #f92672">=</span> seq0<span style="color: #f92672">[</span>:<span style="color: #f92672">]</span>
+    seq1.remove<span style="color: #f92672">(</span>counter1<span style="color: #f92672">)</span>
+    <span style="color: #66d9ef">for </span>counter2 in seq1:
+      <span style="color: #f8f8f2">seq2</span> <span style="color: #f92672">=</span> seq1<span style="color: #f92672">[</span>:<span style="color: #f92672">]</span>
+      seq2.remove<span style="color: #f92672">(</span>counter2<span style="color: #f92672">)</span>
+      <span style="color: #66d9ef">for </span>counter3 in seq2:
+        <span style="color: #f8f8f2">seq3</span> <span style="color: #f92672">=</span> seq2<span style="color: #f92672">[</span>:<span style="color: #f92672">]</span>
+        seq3.remove<span style="color: #f92672">(</span>counter3<span style="color: #f92672">)</span>
+        <span style="color: #66d9ef">for </span>counter4 in seq3:
+          <span style="color: #f8f8f2">seq4</span> <span style="color: #f92672">=</span> seq3<span style="color: #f92672">[</span>:<span style="color: #f92672">]</span>
+          seq4.remove<span style="color: #f92672">(</span>counter4<span style="color: #f92672">)</span>
+          result.append<span style="color: #f92672">(</span><span style="color: #e6db74">&#39;&#39;</span>.join<span style="color: #f92672">([</span>counter1,counter2,counter3,counter4,seq4<span style="color: #f92672">[</span>0<span style="color: #f92672">]]))</span>
+  <span style="color: #66d9ef">return </span>result
+
+<span style="color: #f92672">[</span><span style="color: #e6db74">&#39;__builtins__&#39;</span>, <span style="color: #e6db74">&#39;__doc__&#39;</span>, <span style="color: #e6db74">&#39;__name__&#39;</span>, <span style="color: #e6db74">&#39;calc&#39;</span>, <span style="color: #e6db74">&#39;functext&#39;</span>, <span style="color: #e6db74">&#39;genfunc&#39;</span>,
+<span style="color: #e6db74">&#39;permute&#39;</span>, <span style="color: #e6db74">&#39;sys&#39;</span><span style="color: #f92672">]</span>
+Got 120 items.
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id51">
+<h1>permute5.py v2 输出</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%">...
+          result.append<span style="color: #f92672">(</span><span style="color: #e6db74">&#39;&#39;</span>.join<span style="color: #f92672">([</span>counter1,counter2,counter3,counter4,seq4<span style="color: #f92672">[</span>0<span style="color: #f92672">]]))</span>
+  <span style="color: #66d9ef">return </span>result
+
+<span style="color: #f92672">[</span><span style="color: #e6db74">&#39;__builtins__&#39;</span>, <span style="color: #e6db74">&#39;__doc__&#39;</span>, <span style="color: #e6db74">&#39;__name__&#39;</span>, <span style="color: #e6db74">&#39;calc&#39;</span>, <span style="color: #e6db74">&#39;functext&#39;</span>, <span style="color: #e6db74">&#39;genfunc&#39;</span>,
+<span style="color: #e6db74">&#39;permute&#39;</span>, <span style="color: #e6db74">&#39;sys&#39;</span><span style="color: #f92672">]</span>
+Got 120 items.
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id52">
+<h1>permute5.py v2 计时</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #f92672">...</span>
+<span style="color: #f92672">import</span> <span style="color: #f8f8f2">sys</span><span style="color: #f92672">,</span> <span style="color: #f8f8f2">calc</span>
+<span style="color: #f8f8f2">functext</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">genfunc(len(sys</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">argv[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">]))</span>
+<span style="color: #75715e">#print functext</span>
+<span style="color: #66d9ef">exec</span><span style="color: #f8f8f2">(functext)</span>
+<span style="color: #f8f8f2">thelist</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">permute(list(sys</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">argv[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">]))</span>
+<span style="color: #66d9ef">print</span> <span style="color: #e6db74">&#39;Got&#39;</span><span style="color: #f8f8f2">,len(thelist),</span><span style="color: #e6db74">&#39;items.&#39;</span>
+<span style="color: #f8f8f2">calc</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">calc(thelist,int(sys</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">argv[</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">]))</span>
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="permute5-py-v2-time">
+<h1>permute5.py v2 time</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #f8f8f2">$ time </span>cpython permute5.py 1234567 4
+Got 5040 items.
+Maximum at 6531742 ,product 4846002
+
+real    0m0.213s
+user    0m0.200s
+sys     0m0.010s
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id53">
+<h1>等等...</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">也许</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id54">
+<h1>数学...</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">课本</p>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id55">
+<h1>排列组合原理</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<pre class="literal-block">
+                      [4321]
+                      [3421]
+             [321]  &lt; [3241]
+      [21] &lt; [231]... [3214]
+             [213]...
+[1] &lt;
+             [321]...
+      [21] &lt; [231]...
+             [213]...
+</pre>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id56">
+<h1>求排列的方法</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="incremental takahashi simple">
+<li>先选一个数 1</li>
+<li>然后第二个数 2</li>
+<li>可以放在 1 的前面或是后面</li>
+<li>而每一个放法都会产生一个 2 位数</li>
+<li>对於每一个这样的两位数</li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id57">
+<h1>求排列的方法</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="incremental takahashi simple">
+<li>第三个数 3, 都可以放在它的前面, 中间, 或是最后</li>
+<li>而每一个 3 位数</li>
+<li>第 4 位数都可以插入到这 3 个数的任何一个空位中</li>
+<li>如此类推...</li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="permute6-py">
+<h1>permute6.py</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #66d9ef">def</span> <span style="color: #a6e22e">permute</span><span style="color: #f8f8f2">(seq):</span>
+  <span style="color: #f8f8f2">seqn</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">[seq</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">pop()]</span>
+  <span style="color: #66d9ef">while</span> <span style="color: #f8f8f2">seq:</span>
+    <span style="color: #f8f8f2">newseq</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">[]</span>
+    <span style="color: #f8f8f2">new</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">seq</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">pop()</span>
+    <span style="color: #75715e">#print &quot;seq:&quot;,seq,&#39;seqn&#39;, seqn ,&#39;new&#39;, new</span>
+    <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">range(len(seqn)):</span>
+      <span style="color: #f8f8f2">item</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">seqn[i]</span>
+      <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">j</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">range(len(item)</span><span style="color: #f92672">+</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">):</span>
+        <span style="color: #f8f8f2">newseq</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">append(</span><span style="color: #e6db74">&#39;&#39;</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">join([item[:j]</span>
+            <span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">new</span>
+            <span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">item[j:]]))</span>
+    <span style="color: #f8f8f2">seqn</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">newseq</span>
+    <span style="color: #75715e">#print &#39;newseq&#39;,newseq</span>
+  <span style="color: #66d9ef">return</span>  <span style="color: #f8f8f2">seqn</span>
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id58">
+<h1>permute6.py 调用</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #f92672">import</span> <span style="color: #f8f8f2">sys</span><span style="color: #f92672">,</span> <span style="color: #f8f8f2">calc</span>
+<span style="color: #f8f8f2">seq</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">list(sys</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">argv[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">])</span>
+<span style="color: #f8f8f2">where</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">int(sys</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">argv[</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">])</span>
+<span style="color: #f8f8f2">thelist</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">permute(seq)</span>
+<span style="color: #66d9ef">print</span> <span style="color: #e6db74">&#39;Got&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">len(thelist),</span> <span style="color: #e6db74">&#39;items.&#39;</span>
+<span style="color: #f8f8f2">calc</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">calc(thelist,</span> <span style="color: #f8f8f2">where)</span>
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id59">
+<h1>permute6.py 运行</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #f8f8f2">$ time </span>cpython permute6.py 1234567 4
+Got 5040 items.
+Maximum at 6531742 ,product 4846002
+
+real    0m0.167s
+user    0m0.150s
+sys     0m0.020s
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id60">
+<h1>但是...</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">能再</p>
+<p class="takahashi8">快卟?</p>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id61">
+<h1>&lt;brief/&gt;</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="takahashi simple">
+<li><span class="gray">3' 有关</span></li>
+<li><span class="gray">5' 因缘</span></li>
+<li><span class="gray">15' 次日</span></li>
+<li><span class="orange">15' 守夜</span></li>
+<li><span class="silver">15' 终篇</span></li>
+<li><span class="silver">5' 检讨</span></li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id62">
+<h1>permute6.py 结果</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%">Got 24 items.
+<span style="color: #f92672">[</span>
+<span style="color: #e6db74">&#39;1234&#39;</span>, <span style="color: #e6db74">&#39;2134&#39;</span>, <span style="color: #e6db74">&#39;2314&#39;</span>, <span style="color: #e6db74">&#39;2341&#39;</span>,
+<span style="color: #e6db74">&#39;1324&#39;</span>, <span style="color: #e6db74">&#39;3124&#39;</span>, <span style="color: #e6db74">&#39;3214&#39;</span>, <span style="color: #e6db74">&#39;3241&#39;</span>,
+<span style="color: #e6db74">&#39;1342&#39;</span>, <span style="color: #e6db74">&#39;3142&#39;</span>, <span style="color: #e6db74">&#39;3412&#39;</span>, <span style="color: #e6db74">&#39;3421&#39;</span>,
+<span style="color: #e6db74">&#39;1243&#39;</span>, <span style="color: #e6db74">&#39;2143&#39;</span>, <span style="color: #e6db74">&#39;2413&#39;</span>, <span style="color: #e6db74">&#39;2431&#39;</span>,
+<span style="color: #e6db74">&#39;1423&#39;</span>, <span style="color: #e6db74">&#39;4123&#39;</span>, <span style="color: #e6db74">&#39;4213&#39;</span>, <span style="color: #e6db74">&#39;4231&#39;</span>,
+<span style="color: #e6db74">&#39;1432&#39;</span>, <span style="color: #e6db74">&#39;4132&#39;</span>, <span style="color: #e6db74">&#39;4312&#39;</span>, <span style="color: #e6db74">&#39;4321&#39;</span>
+<span style="color: #f92672">]</span>
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id63">
+<h1>目测...</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">对称!</p>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="permute7-py">
+<h1>permute7.py</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #66d9ef">def</span> <span style="color: #a6e22e">permute</span><span style="color: #f8f8f2">(seq):</span>
+  <span style="color: #f8f8f2">seqn</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">[</span> <span style="color: #f8f8f2">seq</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">pop()</span><span style="color: #f92672">+</span><span style="color: #f8f8f2">seq</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">pop()</span> <span style="color: #f8f8f2">]</span> <span style="color: #75715e"># 仅改此处</span>
+  <span style="color: #66d9ef">while</span> <span style="color: #f8f8f2">seq:</span>
+    <span style="color: #f8f8f2">newseq</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">[]</span>
+    <span style="color: #f8f8f2">new</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">seq</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">pop()</span>
+    <span style="color: #75715e">#print &quot;seq:&quot;,seq,&#39;seqn&#39;, seqn ,&#39;new&#39;, new</span>
+    <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">range(len(seqn)):</span>
+      <span style="color: #f8f8f2">item</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">seqn[i]</span>
+      <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">j</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">range(len(item)</span><span style="color: #f92672">+</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">):</span>
+        <span style="color: #f8f8f2">newseq</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">append(</span><span style="color: #e6db74">&#39;&#39;</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">join([item[:j]</span>
+            <span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">new</span>
+            <span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">item[j:]]))</span>
+    <span style="color: #f8f8f2">seqn</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">newseq</span>
+    <span style="color: #75715e">#print &#39;newseq&#39;,newseq</span>
+  <span style="color: #66d9ef">return</span>  <span style="color: #f8f8f2">seqn</span>
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id64">
+<h1>求排列的方法</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="incremental takahashi simple">
+<li>但是要得到整个排列的话</li>
+<li>重抄一次而且每个元素都要反过来</li>
+<li>&quot;1234&quot; -&gt; &quot;4321&quot;</li>
+<li>字串并没有反序的函数</li>
+<li>只能 <span class="incremental">list.reverse()</span></li>
+<li>但是...</li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="calc2-py">
+<h1>calc2.py</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #66d9ef">def</span> <span style="color: #a6e22e">calc2</span><span style="color: #f8f8f2">(seq,</span> <span style="color: #f8f8f2">where):</span>
+  <span style="color: #f8f8f2">maximum,</span> <span style="color: #f8f8f2">max_item</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">[]</span>
+  <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">seq:</span>
+    <span style="color: #f8f8f2">product</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">int(i[:where])</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">int(i[where:])</span>
+    <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">product</span> <span style="color: #f92672">&gt;</span> <span style="color: #f8f8f2">maximum:</span>
+       <span style="color: #f8f8f2">maximum,</span> <span style="color: #f8f8f2">max_item</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">product,</span> <span style="color: #f8f8f2">i</span>
+    <span style="color: #66d9ef">elif</span> <span style="color: #f8f8f2">product</span> <span style="color: #f92672">==</span> <span style="color: #f8f8f2">maximum:</span>
+       <span style="color: #f8f8f2">max_item</span> <span style="color: #f92672">+=</span> <span style="color: #e6db74">&#39;,&#39;</span><span style="color: #f92672">+</span><span style="color: #f8f8f2">i</span>
+    <span style="color: #f8f8f2">rev</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">list(i)</span>
+    <span style="color: #f8f8f2">rev</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">reverse()</span> <span style="color: #75715e"># 专门配合permute7.py</span>
+    <span style="color: #f8f8f2">i</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&#39;&#39;</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">join(rev)</span>
+    <span style="color: #f8f8f2">product</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">int(i[:where])</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">int(i[where:])</span>
+    <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">product</span> <span style="color: #f92672">&gt;</span> <span style="color: #f8f8f2">maximum:</span>
+       <span style="color: #f8f8f2">maximum,</span> <span style="color: #f8f8f2">max_item</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">product,</span> <span style="color: #f8f8f2">i</span>
+    <span style="color: #66d9ef">elif</span> <span style="color: #f8f8f2">product</span> <span style="color: #f92672">==</span> <span style="color: #f8f8f2">maximum:</span>
+       <span style="color: #f8f8f2">max_item</span> <span style="color: #f92672">+=</span> <span style="color: #e6db74">&#39;,&#39;</span><span style="color: #f92672">+</span><span style="color: #f8f8f2">i</span>
+  <span style="color: #66d9ef">print</span> <span style="color: #e6db74">&quot;Maximum at&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">max_item,</span> <span style="color: #e6db74">&quot;,product&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">maximum</span>
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="permute-py-v2-7">
+<h1>permute.py v2~7 对比</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #f8f8f2">$ time </span>python permute2.py 123456789 5
+Got 362880 items.
+Maximum at 875319642 ,product 843973902
+
+real    0m46.478s
+user    0m46.020s
+sys     0m0.430s
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="permute-py-v1-7">
+<h1>permute.py v1~7 对比</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #f8f8f2">$ time </span>python permute3.py 123456789 5
+Got 362880 items.
+Maximum at 875319642 ,product 843973902
+
+real    0m38.997s
+user    0m38.600s
+sys     0m0.400s
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id65">
+<h1>permute.py v1~7 对比</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #f8f8f2">$ time </span>python permute4.py 123456789 5
+Got 362880 items.
+Maximum at 875319642 ,product 843973902
+
+real    0m33.845s
+user    0m33.460s
+sys     0m0.380s
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id66">
+<h1>permute.py v1~7 对比</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #f8f8f2">$ time </span>python permute5.py 123456789 5
+Got 362880 items.
+Maximum at 875319642 ,product 843973902
+
+real    0m10.681s
+user    0m10.530s
+sys     0m0.150s
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id67">
+<h1>permute.py v1~7 对比</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #f8f8f2">$ time </span>python permute6.py 123456789 5
+Got 362880 items.
+Maximum at 875319642 ,product 843973902
+
+real    0m8.279s
+user    0m8.110s
+sys     0m0.170s
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id68">
+<h1>permute.py v1~7 对比</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #f8f8f2">$ time </span>cpython permute7.py 123456789 5
+Got 181440 items.
+Maximum at 875319642 ,product 843973902
+
+real    0m7.827s
+user    0m7.650s
+sys     0m0.180s
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id69">
+<h1>7倍!</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="incremental takahashi simple">
+<li>permute2.py: user    0m46.020s</li>
+<li>permute7.py: user    0m7.650s</li>
+<li>哈哈哈!</li>
+<li>近七倍呢...</li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id70">
+<h1>但是...</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">睡<span class="orange">不</span></p>
+<p class="takahashi8">着!</p>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id71">
+<h1>排列组合原理</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<pre class="literal-block">
+                      [4321]
+                      [3421]
+             [321]  &lt; [3241]
+      [21] &lt; [231]... [3214]
+             [213]...
+[1] &lt;
+             [321]...
+      [21] &lt; [231]...
+             [213]...
+</pre>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id72">
+<h1>求排列的方法</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="incremental takahashi simple">
+<li>设想有 n 个数字</li>
+<li>先取第一个数字</li>
+<li>再取第二个数字</li>
+<li>第二个数可以放在第一个数的左或右面</li>
+<li>就是有 0, 1 两个选择</li>
+<li>...</li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id73">
+<h1>求排列的方法</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="incremental takahashi simple">
+<li>再取第三个数,</li>
+<li>可放在最左, 中间, 最右</li>
+<li>就是有 0, 1, 2 三个选择</li>
+<li>嗯嗯嗯?</li>
+<li>八进位那些数系转换关系?!</li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id74">
+<h1>94介样</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">没错</p>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id75">
+<h1>求排列的方法</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="incremental takahashi simple">
+<li>若求 4个数的 4! = 24 个排列,</li>
+<li>第 18 个排列可以这样求得</li>
+<li>18 除 2, 余数是 0,</li>
+<li>所以第二个数放在第一个数的左面</li>
+<li></li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id76">
+<h1>求排列的方法</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="incremental takahashi simple">
+<li>然后商 9 再除 3,</li>
+<li>余数 0, 所以第三个数於在头两个数的最左</li>
+<li>最后 3 除以 4, 余数是 3</li>
+<li>因此第四个数要放在前三个数的第 4 个空位</li>
+<li>也就是最右面!</li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id77">
+<h1>最大好处...</h1>
+<div class="handout container">
+原子化 <a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">分布式</p>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id78">
+<h1>这不94..</h1>
+<div class="handout container">
+原子化 <a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">等等?!</p>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id79">
+<h1>permute4.py</h1>
+<div class="handout container">
+<ul class="simple">
+<li>Python recipes « ActiveState Code</li>
+<li><a class="reference external" href="http://code.activestate.com/recipes/126037-getting-nth-permutation-of-a-sequence/">Getting permutation of a sequence</a></li>
+</ul>
+</div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #66d9ef">def</span> <span style="color: #a6e22e">getPerm</span><span style="color: #f8f8f2">(seq,</span> <span style="color: #f8f8f2">index):</span>
+    <span style="color: #f8f8f2">seqc</span><span style="color: #f92672">=</span> <span style="color: #f8f8f2">list(seq[:])</span>
+    <span style="color: #f8f8f2">seqn</span><span style="color: #f92672">=</span> <span style="color: #f8f8f2">[seqc</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">pop()]</span>
+    <span style="color: #f8f8f2">divider</span><span style="color: #f92672">=</span> <span style="color: #ae81ff">2</span>
+    <span style="color: #66d9ef">while</span> <span style="color: #f8f8f2">seqc:</span>
+        <span style="color: #f8f8f2">index,</span> <span style="color: #f8f8f2">new_index</span><span style="color: #f92672">=</span> <span style="color: #f8f8f2">index</span><span style="color: #f92672">/</span><span style="color: #f8f8f2">divider</span>
+            <span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">index</span><span style="color: #f92672">%</span><span style="color: #f8f8f2">divider</span>
+        <span style="color: #f8f8f2">seqn</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">insert(new_index,</span> <span style="color: #f8f8f2">seqc</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">pop())</span>
+        <span style="color: #f8f8f2">divider</span><span style="color: #f92672">+=</span> <span style="color: #ae81ff">1</span>
+    <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">seqn</span>
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id80">
+<h1>世上聪明人太多..</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">残念</p>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id81">
+<h1>&lt;brief/&gt;</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="takahashi simple">
+<li><span class="gray">3' 有关</span></li>
+<li><span class="gray">5' 因缘</span></li>
+<li><span class="gray">15' 次日</span></li>
+<li><span class="gray">15' 守夜</span></li>
+<li><span class="orange">15' 终篇</span></li>
+<li><span class="silver">5' 检讨</span></li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id82">
+<h1>梦...</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<a class="takahashi reference external image-reference" href="http://book.douban.com/subject/4760725/"><img alt="讲演之禅" class="align-center" src="i/snap/阿凡提.jpg" style="height: 400px;" /></a>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id83">
+<h1>提出挑战</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="incremental takahashi simple">
+<li>除非你解答了我的难题,</li>
+<li>不然我的驴子会不停在你耳边嘶叫令你无法睡好!</li>
+<li>问题是:</li>
+<li>...</li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id84">
+<h1>游戏.</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="takahashi simple">
+<li>把五个数字 56789,</li>
+<li>放到 [][][] * [][],</li>
+<li>令结果最大.</li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id85">
+<h1>阿凡提没电脑...</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">等等!</p>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id86">
+<h1>数学推理</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #75715e"># 假设五个数为  [a][b][c]*[d][e]</span>
+<span style="color: #75715e"># 展开的话...</span>
+
+  <span style="color: #f8f8f2">a</span> <span style="color: #f92672">*</span> <span style="color: #ae81ff">100</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">d</span> <span style="color: #f92672">*</span> <span style="color: #ae81ff">10</span>
+<span style="color: #f92672">+</span> <span style="color: #f8f8f2">a</span> <span style="color: #f92672">*</span> <span style="color: #ae81ff">100</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">e</span> <span style="color: #f92672">*</span> <span style="color: #ae81ff">1</span>
+<span style="color: #f92672">+</span> <span style="color: #f8f8f2">b</span> <span style="color: #f92672">*</span> <span style="color: #ae81ff">10</span>  <span style="color: #f92672">*</span> <span style="color: #f8f8f2">d</span> <span style="color: #f92672">*</span> <span style="color: #ae81ff">10</span>
+<span style="color: #f92672">+</span> <span style="color: #f8f8f2">b</span> <span style="color: #f92672">*</span> <span style="color: #ae81ff">10</span>  <span style="color: #f92672">*</span> <span style="color: #f8f8f2">e</span> <span style="color: #f92672">*</span> <span style="color: #ae81ff">1</span>
+<span style="color: #f92672">+</span> <span style="color: #f8f8f2">c</span> <span style="color: #f92672">*</span> <span style="color: #ae81ff">1</span>   <span style="color: #f92672">*</span> <span style="color: #f8f8f2">d</span> <span style="color: #f92672">*</span> <span style="color: #ae81ff">10</span>
+<span style="color: #f92672">+</span> <span style="color: #f8f8f2">c</span> <span style="color: #f92672">*</span> <span style="color: #ae81ff">1</span>   <span style="color: #f92672">*</span> <span style="color: #f8f8f2">e</span> <span style="color: #f92672">*</span> <span style="color: #ae81ff">1</span>
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id87">
+<h1>矩阵</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #75715e"># 这个可以写成一个矩阵</span>
+
+      <span style="color: #f8f8f2">d</span>    <span style="color: #f8f8f2">e</span>
+<span style="color: #f8f8f2">a</span>  <span style="color: #ae81ff">1000</span>  <span style="color: #ae81ff">100</span>
+<span style="color: #f8f8f2">b</span>   <span style="color: #ae81ff">100</span>   <span style="color: #ae81ff">10</span>
+<span style="color: #f8f8f2">c</span>    <span style="color: #ae81ff">10</span>    <span style="color: #ae81ff">1</span>
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id88">
+<h1>数值推理</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="incremental takahashi simple">
+<li>a 带来的贡献是:</li>
+<li>一个百位数加上一个十位数</li>
+<li>b 的贡献是:</li>
+<li>一个百位数加十位数加个位数</li>
+<li>因此 d 要比 a 更重要</li>
+<li>要取得最大的积,一定要最大放在 d 的位置</li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id89">
+<h1>对数矩阵</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%">      <span style="color: #f8f8f2">d</span>    <span style="color: #f8f8f2">e</span>
+<span style="color: #f8f8f2">a</span>  <span style="color: #ae81ff">1000</span>  <span style="color: #ae81ff">100</span>
+<span style="color: #f8f8f2">b</span>   <span style="color: #ae81ff">100</span>   <span style="color: #ae81ff">10</span>
+<span style="color: #f8f8f2">c</span>    <span style="color: #ae81ff">10</span>    <span style="color: #ae81ff">1</span>
+
+<span style="color: #75715e"># 用对数来记数</span>
+<span style="color: #75715e"># 100 = 10e2, 用 2 来代表好了</span>
+
+   <span style="color: #f8f8f2">d</span> <span style="color: #f8f8f2">e</span>
+<span style="color: #f8f8f2">a</span>  <span style="color: #ae81ff">3</span> <span style="color: #ae81ff">2</span>
+<span style="color: #f8f8f2">b</span>  <span style="color: #ae81ff">2</span> <span style="color: #ae81ff">1</span>
+<span style="color: #f8f8f2">c</span>  <span style="color: #ae81ff">1</span> <span style="color: #ae81ff">0</span>
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id90">
+<h1>数值推理</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="incremental takahashi simple">
+<li>计算每一行或列的和</li>
+<li>称为该数位的贡献基值,</li>
+<li>因此...</li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id91">
+<h1>对数矩阵</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%">   <span style="color: #f8f8f2">d</span> <span style="color: #f8f8f2">e</span>
+<span style="color: #f8f8f2">a</span>  <span style="color: #ae81ff">3</span> <span style="color: #ae81ff">2</span>
+<span style="color: #f8f8f2">b</span>  <span style="color: #ae81ff">2</span> <span style="color: #ae81ff">1</span>
+<span style="color: #f8f8f2">c</span>  <span style="color: #ae81ff">1</span> <span style="color: #ae81ff">0</span>
+
+<span style="color: #75715e"># 贡献基数</span>
+    <span style="color: #f8f8f2">a</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">5</span>
+    <span style="color: #f8f8f2">b</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">3</span>
+    <span style="color: #f8f8f2">c</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">1</span>
+    <span style="color: #f8f8f2">d</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">6</span>
+    <span style="color: #f8f8f2">e</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">3</span>
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id92">
+<h1>数值推理</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="incremental takahashi simple">
+<li>因为我们用了对数,</li>
+<li>而 log(1) = 0,</li>
+<li>因此把 b 和 e 之间的微小分别给忽略了</li>
+<li>所以...</li>
+<li>把每个数都 +1</li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id93">
+<h1>对数矩阵</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%">   <span style="color: #f8f8f2">d</span> <span style="color: #f8f8f2">e</span>
+<span style="color: #f8f8f2">a</span>  <span style="color: #ae81ff">4</span> <span style="color: #ae81ff">3</span>
+<span style="color: #f8f8f2">b</span>  <span style="color: #ae81ff">3</span> <span style="color: #ae81ff">2</span>
+<span style="color: #f8f8f2">c</span>  <span style="color: #ae81ff">2</span> <span style="color: #ae81ff">1</span>
+
+<span style="color: #75715e"># 贡献基数</span>
+    <span style="color: #f8f8f2">a</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">7</span>
+    <span style="color: #f8f8f2">b</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">5</span>
+    <span style="color: #f8f8f2">c</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">3</span>
+    <span style="color: #f8f8f2">d</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">9</span>
+    <span style="color: #f8f8f2">e</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">6</span>
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id94">
+<h1>数值推理~错?</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="incremental takahashi simple">
+<li>这些基数代表了该位置的重要性,</li>
+<li>可以按大小分予不同的数字;</li>
+<li>所以: 865 * 97</li>
+<li>但是...</li>
+<li>正确解是 875 * 96</li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id95">
+<h1>数值推理</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="incremental takahashi simple">
+<li>b 的页献: b * d * 100 + b * e * 10</li>
+<li>e 的页献: e * a * 100 + e * b * 10 + e * c</li>
+<li>但因为我们把 9 配给了 d 而 8 配给了 a</li>
+<li>基数只相差在 e * c 这个个位数乘积上</li>
+<li>结果把这个小的差异覆盖掉了</li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id96">
+<h1>二阶基数</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="incremental takahashi simple">
+<li>如 b * d 的基数是 100</li>
+<li>但是由於 d 的基数为 9,</li>
+<li>那 b 的二阶基数可以算成 9,</li>
+<li>代表和 b 相关的是一个较为重要的数,</li>
+<li>...</li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id97">
+<h1>二阶基数</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="incremental takahashi simple">
+<li>同样 e * a 的基数是也是 100</li>
+<li>但由於 a 的基数只是 7</li>
+<li>因此 e 的二阶基数只是 7 而已</li>
+<li>这样就可以得出 b 要比 e 更重要!</li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id98">
+<h1>三阶基数</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="incremental takahashi simple">
+<li>其实 b 和 e 的二阶基数</li>
+<li>原来也是一样的 <span class="orange">!</span></li>
+<li>大家都是 15</li>
+<li>也许要上三阶基数?</li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id99">
+<h1>但是...</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8"><span class="orange">不</span></p>
+<p class="takahashi8">妥当</p>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id100">
+<h1>半个...</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8"><span class="orange">凉</span></p>
+<p class="takahashi8">馒头</p>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id101">
+<h1>答案进入脑海</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="incremental takahashi simple">
+<li>求出所有位置的&quot;重要性&quot;</li>
+<li>依次把最大的数字分配给最重要的位置</li>
+<li>但是,位置是<span class="orange">纠缠</span> 的!</li>
+<li>因此,一次算出所有位置的 &quot;重要性&quot;</li>
+<li>不现实!</li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id102">
+<h1>每次只求一个位置!</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="incremental takahashi simple">
+<li>目标形式 abcd*de</li>
+<li>假如 5 个数字一样, 11111,</li>
+<li>最大的乘积只能是 111 * 11</li>
+<li>改哪个会使结果最大?</li>
+<li>答案是 111 * 21</li>
+<li>也就是 d 的位置. 好, 把 d 替换成 9</li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id103">
+<h1>每次只求一个位置!</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="incremental takahashi simple">
+<li>问题变成 5 个数字, 111 * 91</li>
+<li>改一个数(除了 9), 改哪一个 ?</li>
+<li>211 * 91, 121 * 91, 112 * 91, 111 * 19</li>
+<li>答案是 211 * 91</li>
+<li>答案是 111 * 21</li>
+<li>也就是 a 的位置. 好, 替换成 8.</li>
+<li>以此类推..</li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="wise-py">
+<h1>wise.py</h1>
+<div class="handout container">
+基于阿凡提的 wise <a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #66d9ef">def</span> <span style="color: #a6e22e">solve</span><span style="color: #f8f8f2">(seq,where):</span>
+  <span style="color: #f8f8f2">n</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">len(seq)</span>
+  <span style="color: #f8f8f2">seq</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">sort()</span>
+  <span style="color: #f8f8f2">seq</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">reverse()</span>
+  <span style="color: #f8f8f2">table</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">[</span> <span style="color: #f8f8f2">[]</span> <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">range(n)</span> <span style="color: #f8f8f2">]</span>
+  <span style="color: #f8f8f2">left,</span> <span style="color: #f8f8f2">right</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">where,</span> <span style="color: #f8f8f2">n</span> <span style="color: #f92672">-</span> <span style="color: #f8f8f2">where</span>
+  <span style="color: #f8f8f2">leftr</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">long(</span><span style="color: #e6db74">&#39;1&#39;</span><span style="color: #f92672">*</span><span style="color: #f8f8f2">left)</span> <span style="color: #75715e"># 全1 的占位数值</span>
+  <span style="color: #f8f8f2">rightr</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">long(</span><span style="color: #e6db74">&#39;1&#39;</span><span style="color: #f92672">*</span><span style="color: #f8f8f2">right)</span>
+  <span style="color: #f8f8f2">flag</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">[]</span> <span style="color: #75715e"># 已经选好的位置</span>
+  <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">item</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">[</span> <span style="color: #f8f8f2">int(x)</span> <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">x</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">seq]:</span>
+    <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">range(left):</span>
+      <span style="color: #f8f8f2">table[left</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">i</span><span style="color: #f92672">-</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">(leftr</span> <span style="color: #f92672">+</span> <span style="color: #ae81ff">10</span><span style="color: #f92672">**</span><span style="color: #f8f8f2">i)</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">rightr</span>
+    <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">range(right):</span>
+      <span style="color: #f8f8f2">table[right</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">i</span><span style="color: #f92672">+</span><span style="color: #f8f8f2">where</span><span style="color: #f92672">-</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">leftr</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">(rightr</span> <span style="color: #f92672">+</span> <span style="color: #ae81ff">10</span><span style="color: #f92672">**</span><span style="color: #f8f8f2">i)</span>
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id104">
+<h1>wise.py</h1>
+<div class="handout container">
+基于阿凡提的 wise <a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%">  <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">flag:</span>
+    <span style="color: #f8f8f2">table[i]</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span>
+  <span style="color: #f8f8f2">tablesorted</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">table[:]</span>
+  <span style="color: #f8f8f2">tablesorted</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">sort()</span>
+  <span style="color: #f8f8f2">maxindex</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">table</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">index(tablesorted[</span><span style="color: #f92672">-</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">])</span>
+  <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">maxindex</span> <span style="color: #f92672">&gt;=</span> <span style="color: #f8f8f2">where:</span>
+     <span style="color: #f8f8f2">rightr</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">rightr</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">(item</span><span style="color: #f92672">-</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">)</span> <span style="color: #f92672">*</span> <span style="color: #ae81ff">10</span><span style="color: #f92672">**</span><span style="color: #f8f8f2">(right</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">maxindex</span><span style="color: #f92672">+</span><span style="color: #f8f8f2">where</span><span style="color: #f92672">-</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">)</span>
+  <span style="color: #66d9ef">else</span><span style="color: #f8f8f2">:</span>
+     <span style="color: #f8f8f2">leftr</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">leftr</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">(item</span><span style="color: #f92672">-</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">)</span> <span style="color: #f92672">*</span> <span style="color: #ae81ff">10</span><span style="color: #f92672">**</span><span style="color: #f8f8f2">(left</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">maxindex</span><span style="color: #f92672">-</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">)</span>
+  <span style="color: #f8f8f2">flag</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">append(maxindex)</span>
+  <span style="color: #75715e">#print maxindex, leftr, rightr</span>
+<span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">leftr,</span> <span style="color: #f8f8f2">rightr</span>
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id105">
+<h1>对比</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #f8f8f2">$time</span> python permute7.py 123456789 5
+Got 181440 items.
+Maximum at 875319642 ,product 843973902
+
+real    0m7.827s
+user    0m7.650s
+sys     0m0.180s
+
+<span style="color: #f8f8f2">$ time </span>python wise2.py 123456789 5
+Maximum at 87531 9642 ,product 843973902
+
+real    0m0.042s
+user    0m0.010s
+sys     0m0.030s
+</pre></div>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="wow">
+<h1>Wow</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi7">两百</p>
+<p class="takahashi7">倍<span class="orange">!</span></p>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id106">
+<h1>跳出限制</h1>
+<div class="handout container">
+不用阶乘|zqeye|</div>
+<p class="takahashi8">n<span class="orange">!</span></p>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id107">
+<h1>这种感觉</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">to</p>
+<p class="takahashi8"><span class="orange">hack</span></p>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id108">
+<h1>&lt;brief/&gt;</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="takahashi simple">
+<li><span class="gray">3' 有关</span></li>
+<li><span class="gray">5' 因缘</span></li>
+<li><span class="gray">15' 次日</span></li>
+<li><span class="gray">15' 守夜</span></li>
+<li><span class="gray">15' 终篇</span></li>
+<li><span class="orange">5' 检讨</span></li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="glace">
+<h1>glace的自省</h1>
+<div class="handout container">
+<ul class="simple">
+<li>CPU: Pentium III 866 RAM: 128 MB</li>
+<li>Slackware Linux: 9.0 Linux Kernel: 2.4.2 GCC: 3.2.2</li>
+<li>Python: 修改过的 2.1.3</li>
+</ul>
+</div>
+<ul class="incremental takahashi simple">
+<li>问题要规范成普遍形式</li>
+<li>先自行尝试,再找更好的</li>
+<li>然后,想另一个打败之</li>
+<li>教科书/Python 是好的</li>
+<li>啃凉馒头对脑筋有帮助</li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li>...</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id109">
+<h1>总之</h1>
+<div class="handout container">
+期望可以记住的~单位时间可以记住的只有7+-2 个 <a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul class="incremental takahashi simple">
+<li>#NoZuoNoDieWhyUtry#</li>
+<li>专注总是稀缺资源</li>
+<li>兴趣是坚持的动力</li>
+<li>有趣是最好的奖励</li>
+<li>DO WAHT U'VE NEVER DONE</li>
+</ul>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="discuss">
+<h1>&lt;discuss/&gt;</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<p class="takahashi8">Q&amp;A</p>
+<p class="takahashi0"><span class="gray">.</span></p>
+<p class="takahashi0"><span class="gray">.</span></p>
+<table class="takahashi0 docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Authors:</th><td class="field-body">ZoomQuiet+gdg[AT]gmail.com</td>
+</tr>
+<tr class="field"><th class="field-name">URL:</th><td class="field-body"><a class="reference external" href="http://s5.zoomquiet.io/140511-hoa6-start4game/">http://s5.zoomquiet.io/140511-hoa6-start4game/</a></td>
+</tr>
+</tbody>
+</table>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id110">
+<h1>最后的最后...</h1>
+<div class="handout container">
+好书推荐... <a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<a class="takahashi reference external image-reference" href="http://book.douban.com/subject/4760725/"><img alt="讲演之禅" class="align-center" src="i/s4279952-zen4talk.jpg" style="height: 400px;" /></a>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id111">
+<h1>&lt;版本/&gt;</h1>
+<div class="handout container">
+<a class="reference external" href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet"><img alt="是也乎;-)" src="i/id/zoomquiet_1-1_outline.png" /></a></div>
+<ul>
+<li><p class="first">140508 调整细节,形成故事...</p>
+</li>
+<li><p class="first">140507 增补代码,调节章节</p>
+</li>
+<li><p class="first">140504 为HOA.6 创建</p>
+</li>
+<li><dl class="first docutils">
+<dt>050319 珍藏到 啄木鸟Wiki 中</dt>
+<dd><ul class="first last simple">
+<li><a class="reference external" href="http://wiki.woodpecker.org.cn/moin/AllStartFromGame">http://wiki.woodpecker.org.cn/moin/AllStartFromGame</a></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">2002年许由 glace 整理到中蟒 Wiki 中</p>
+</li>
+</ul>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Authors:</th><td class="field-body">ZoomQuiet+gdg[AT]gmail.com</td>
+</tr>
+<tr class="field"><th class="field-name">URL:</th><td class="field-body"><a class="reference external" href="http://s5.zoomquiet.io/140511-hoa6-start4game/">http://s5.zoomquiet.io/140511-hoa6-start4game/</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="slide" id="id112">
+<h1><a class="reference external" href="http://www.meyerweb.com/eric/tools/s5/">S5</a></h1>
+<div class="handout container">
+纯HTML 幻灯撰写框架!... <a class="reference external" href="http://www.meyerweb.com/eric/tools/s5/"><img alt="S5icon" class="align-top" src="pix/S5icon.GIF" /></a></div>
+<ul class="simple">
+<li>S<sup>5</sup>== a <span class="orange">S</span> imple <span class="orange">S</span> tandards-Based <span class="orange">S</span> lide <span class="orange">S</span> how <span class="orange">S</span> ystem</li>
+</ul>
+<blockquote>
+<ul class="simple">
+<li>仅仅依靠 CSS+JS 的HTML格式幻灯演示框架</li>
+</ul>
+</blockquote>
+<ul class="simple">
+<li>我的编辑环境: <a class="reference external" href="http://wiki.woodpecker.org.cn/moin/LeoEnvironment"><img alt="LeoProse" class="align-top" src="pix/LeoProse.gif" /></a> ~ <a class="reference external" href="http://en.wikipedia.org/wiki/Literate_programming">文学化编辑器</a></li>
+</ul>
+<a class="reference external image-reference" href="http://wiki.woodpecker.org.cn/moin/LeoEnvironment"><img alt="pix/2010-01-18-230729_605x421_leo.png" class="align-center" src="pix/2010-01-18-230729_605x421_leo.png" /></a>
+<div class="notes container">
+<ul class="simple">
+<li></li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>
