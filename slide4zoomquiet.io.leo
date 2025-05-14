@@ -8,11 +8,12 @@
 <vnodes>
 <v t="zoomq.20230511210425.1"><vh>tools</vh>
 <v t="zoomq.20250514123043.1"><vh>@auto custom.css</vh></v>
-<v t="zoomq.20250514154556.1"><vh>@auto pandoc2reveal.sh</vh></v>
+<v t="zoomq.20250514154556.1"><vh>_pandoc2reveal.sh</vh></v>
 </v>
 <v t="zoomq.20220612212104.1"><vh>slides/</vh>
 <v t="zoomq.20230511211522.1"><vh>@auto pandoc2slide.md</vh></v>
 <v t="zoomq.20230511212243.1"><vh>Chaos42</vh>
+<v t="zoomq.20231211205711.1"><vh>@auto AIGCxZh2life3.md</vh></v>
 <v t="zoomq.20240521193237.1"><vh>@auto effecitc0.md</vh></v>
 <v t="zoomq.20240704202345.1"><vh>@auto effect4pandsc0.md</vh></v>
 <v t="zoomq.20250320214559.1"><vh>Hedy.org</vh>
@@ -25,7 +26,6 @@
 <v t="zoomq.20240603153255.1"><vh>@auto hedy4cd120c7.md</vh></v>
 <v t="zoomq.20240616232927.1"><vh>@auto hedy4cd120c8.md</vh></v>
 </v>
-<v t="zoomq.20231211205711.1"><vh>@auto AIGCxZh-life3.md</vh></v>
 <v t="zoomq.20230615195832.1"><vh>@auto c42d-oldeath.md</vh></v>
 <v t="zoomq.20230622142203.1"><vh>@auto c42d-liveaid.md</vh></v>
 <v t="zoomq.20230621144251.1"><vh>@auto c42d-fsm4gnu.md</vh></v>
@@ -1353,5 +1353,55 @@ fi #else
 
 </t>
 <t tx="zoomq.20250320214559.1"></t>
+<t tx="zoomq.20250514154556.1">@language bash
+#!/bin/sh
+#=========================================================== var defines
+VER="pandoc2reveal v.250514.13542"
+echo $VER
+echo USAGE::
+echo ' 进入pandoc2reveal.sh 所在目录'
+echo '$ ./pandoc2reveal.sh [源文稿名,不含拓展名] [theme 编号]'
+echo '  NOT .md'
+
+exit  0
+
+AIMP='../public'
+NAME=$1
+if [ -z $NAME ] ;then    
+    echo ALERT::
+    echo '  LOST "[源文稿名]"'
+    exit  0
+else
+
+echo base $NAME
+MD=$1.md
+SLIDES=$AIMP/$1.html
+echo "got draft &lt;-- $MD"
+echo "exp. reveal.js slides -&gt; $SLIDES"
+#=========================================================== path defines
+#PY=$( which python)
+#NOW_TIME_STAMP=$(date "+%y%m%d.%H%M%S")
+#echo $NOW_TIME_STAMP
+#LOGF=$UC_LOGGER_ROOT/log/api_$NOW_TIME_STAMP.log
+#LOGD=$UC_LOGGER_ROOT/log/ff2world_$NOW_TIME_STAMP.log
+#=========================================================== action defines
+#echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"  &gt;&gt; $LOGD
+#echo "###::$VER Hooks log 4 auto ff2world action"  &gt;&gt; $LOGD
+#echo "###::run@" `date +"%Y/%m/%d %H:%M:%S"` &gt;&gt; $LOGD
+#echo "&lt;&lt;&lt;   trigger by inter. API srv."  &gt;&gt; $LOGD
+
+echo pandoc $MD -o $SLIDES -t revealjs -s -V theme=solarized
+
+pandoc $MD -o $SLIDES -t revealjs -s -V theme=solarized
+
+#echo "###::end@" `date +"%Y/%m/%d %H:%M:%S"` &gt;&gt; $LOGD
+#echo "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"  &gt;&gt; $LOGD
+#=========================================================== action DONE
+
+fi #if [ -z $NAME ] ;then
+
+# pandoc "ctalk220908gdgzh.md" -o "ctalk220908gdgzh.pdf" --pdf-engine=xelatex --toc --toc-depth=4 --from markdown --template eisvogel --listings
+
+exit  0</t>
 </tnodes>
 </leo_file>
