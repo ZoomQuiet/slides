@@ -1,0 +1,5 @@
+/revealjs/dist/theme/*.css
+  Content-Type: text/css
+
+/revealjs/dist/*.js
+  Content-Type: application/javascript
