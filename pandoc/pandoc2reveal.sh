@@ -73,7 +73,7 @@ cmd="pandoc \"$MD\" \
 -V revealjs-url=./reveal.js \
 -V slideNumber=true \
 -V progress=true \
--V transition=zoom \
+-V transition=concave \
 -V theme=\"$SELECTED_THEME\" "
 #--standalone \
 #-t revealjs \

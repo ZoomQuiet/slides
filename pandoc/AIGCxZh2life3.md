@@ -234,7 +234,7 @@ Fabric/Cello/...
 
 -------
 
-![9787553672786](img/2023-12-11-zshot%202023-12-11%2022.33.39.jpg)
+![封面](img/2023-12-11-zshot%202023-12-11%2022.33.39.jpg)
 
 
 -------
@@ -379,6 +379,8 @@ Fabric/Cello/...
 
 ## 你
 > 想要什么样的未来?
+
+[AgeOfAI.org](https://futureoflife.org/ai/superintelligence-survey/)
 
 ## C6:10亿年后
 > 文明的边界
