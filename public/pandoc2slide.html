@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
   <meta name="author" content="Zoom.Quiet">
-  <title>Pandoc 2 Slides</title>
+  <title>Pandoc 2 Slide</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reset.css">
-  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reveal.css">
+  <link rel="stylesheet" href="reveal.js/dist/reset.css">
+  <link rel="stylesheet" href="reveal.js/dist/reveal.css">
   <style>
     .reveal .sourceCode {  /* see #7635 */
       overflow: visible;
@@ -19,24 +19,28 @@
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
     ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
       width: 0.8em;
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
-  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/solarized.css" id="theme">
+  <link rel="stylesheet" href="reveal.js/dist/theme/solarized.css" id="theme">
+  <link rel="stylesheet" href="custom.css"/>
 </head>
 <body>
   <div class="reveal">
     <div class="slides">
 
 <section id="title-slide">
-  <h1 class="title">Pandoc 2 Slides</h1>
+  <h1 class="title">Pandoc 2 Slide</h1>
   <p class="author">Zoom.Quiet</p>
-  <p class="date">181230~230319</p>
+  <p class="date">181230 1414</p>
 </section>
 
 <section>
@@ -46,13 +50,9 @@
 </section>
 <section id="幻灯" class="slide level2">
 <h2>幻灯</h2>
-<p>为什么学?</p>
 </section>
 <section id="高桥流" class="slide level2">
 <h2>高桥流</h2>
-<blockquote>
-<p>技不压身</p>
-</blockquote>
 </section>
 <section id="s5" class="slide level2">
 <h2>S5</h2>
@@ -78,19 +78,18 @@
 </section>
 <section id="一键生成" class="slide level2">
 <h2>一键生成</h2>
-<p>为什么?</p>
 </section>
 <section id="pages-兼容" class="slide level2">
 <h2>pages 兼容</h2>
-<blockquote>
-<p>技不压身</p>
-</blockquote>
 </section>
 <section id="内置模板够美" class="slide level2">
-<h2>内置模板够美</h2>
-<blockquote>
-<p>不调CSS3</p>
-</blockquote>
+<h2>## 内置模板够美</h2>
+<figure>
+<img
+data-src="http://0.zoomquiet.top/ZQCollection/infograph/100126-formula-success.png"
+alt="formula-success)" />
+<figcaption aria-hidden="true">formula-success)</figcaption>
+</figure>
 </section></section>
 <section>
 <section id="how" class="title-slide slide level1">
@@ -99,9 +98,9 @@
 </section>
 <section id="安装" class="slide level2">
 <h2>安装</h2>
-<blockquote>
-<p>pip install pandoc</p>
-</blockquote>
+<ul>
+<li>pip install pandoc</li>
+</ul>
 </section>
 <section id="使用" class="slide level2">
 <h2>使用</h2>
@@ -109,36 +108,11 @@
     -o pandoc2slide.html \
     -t revealjs -s</code></pre>
 </section>
-<section id="工具化" class="slide level2">
-<h2>工具化:</h2>
-<blockquote>
-<p>自制小脚本</p>
-</blockquote>
-<ul>
-<li class="fragment">编译 md -&gt; html
-<ul>
-<li class="fragment">$ ./pandoc2reveal.sh AIGCxZh-life3 7</li>
-<li class="fragment"><a
-href="https://gist.github.com/ZoomQuiet/cba81f15ecd6c39d7ffae37272e1ad8f">配套幻灯编译脚本</a></li>
-</ul></li>
-<li class="fragment">调用浏览器 app 模式本地演示
-<ul>
-<li class="fragment">$ cr4app AIGCxZh-life3.html</li>
-<li class="fragment"><a
-href="https://gist.github.com/ZoomQuiet/008989ec91e65a3ba70fed32b88f5623">配置本地演示脚本</a></li>
-</ul></li>
-</ul>
-</section>
 <section id="发布" class="slide level2">
 <h2>发布</h2>
 <ul>
-<li class="fragment"><a
-href="https://gitlab.com/pages/plain-html/">plain-html · GitLab</a></li>
-<li class="fragment"><a
-href="https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#types-of-github-pages-sites">About
-GitHub Pages - GitHub Docs</a></li>
-<li class="fragment"><a href="https://vercel.com/docs">Introduction to
-Vercel | Vercel Docs</a> ..</li>
+<li><a href="https://gitlab.com/pages/plain-html/">plain-html ·
+GitLab</a></li>
 </ul>
 </section>
 <section id="todo" class="slide level2">
@@ -146,91 +120,40 @@ Vercel | Vercel Docs</a> ..</li>
 <ul>
 <li class="fragment">自动化</li>
 <li class="fragment">可视化?</li>
-<li class="fragment">定制样式 <a
-href="https://revealjs.com/themes/">Themes | reveal.js</a>, <a
-href="https://revealjs-themes.dzello.com/#/">themes.dzello</a></li>
+<li class="fragment">定制样式</li>
 <li class="fragment">Slack 结合</li>
 <li class="fragment">…</li>
 </ul>
 </section></section>
 <section>
-<section id="section" class="title-slide slide level1">
-<h1>(￣▽￣)</h1>
+<section id="是也乎" class="title-slide slide level1">
+<h1>是也乎</h1>
 
 </section>
-<section id="눈_눈" class="slide level2">
-<h2>눈_눈</h2>
-<blockquote>
-<p>是也乎</p>
-</blockquote>
+<section id="section" class="slide level2">
+<h2>(￣▽￣)</h2>
 <ul>
-<li class="fragment"><a
-href="https://github.com/101camp/slides">101camp/slides: slides.101.camp
-collections all presentations from DAMA</a></li>
-<li class="fragment"><strong>https://slides.101.camp</strong></li>
+<li><a href="https://gitlab.com/pythonicamp/slides">PythoniCamp / slides
+· GitLab</a></li>
 </ul>
 </section>
-<section class="slide level2">
-
-<figure>
-<img
-data-src="http://org.up.zoomquiet.top/omc/res/KEEP/kcn_ask-dama.jpg!/fh/420"
-alt="askDAMA@googlegroups.com" />
-<figcaption
-aria-hidden="true">ask<strong>DAMA</strong>@<strong>g</strong>oo<strong>g</strong>le<strong>g</strong>roup<strong>s</strong>.com</figcaption>
-</figure>
-</section>
-<section id="是也乎" class="slide level2">
-<h2>是也乎</h2>
+<section id="change" class="slide level2">
+<h2>Change</h2>
 <ul>
-<li>231212 append usage</li>
-<li>230315 mv into Vercel</li>
-<li>221216 mv into GitHub</li>
 <li>190106 <span class="citation" data-cites="auto-md">@auto-md</span>
 Leo</li>
 <li>181230 subl make</li>
 </ul>
-</section>
-<section class="slide level2">
-
-<p><img data-src="img/190416got-ride-dragon.jpg" /></p>
-</section>
-<section id="mvp" class="slide level2">
-<h2>MVP</h2>
-<blockquote>
-<p>开发/调试的 最小行为</p>
-</blockquote>
-<pre><code>编写/修改
-^   +-&gt;运行
-|       +-&gt; 观察
-\__________/</code></pre>
-</section>
-<section id="change" class="slide level2">
-<h2>Change</h2>
-<blockquote>
-<p>在线可阅</p>
-</blockquote>
-<p><a
-href="http://slides.101.camp/d0d0ch.html">slides.101.camp/d0d0ch</a></p>
-</section>
-<section class="slide level2">
-
-<figure>
-<img
-data-src="http://org.up.zoomquiet.top/omc/res/KEEP/kcn_sleep.png?imageView2/2/w/510"
-alt="Zzz…" />
-<figcaption aria-hidden="true">Zzz…</figcaption>
-</figure>
 </section></section>
     </div>
   </div>
 
-  <script src="https://unpkg.com/reveal.js@^4//dist/reveal.js"></script>
+  <script src="reveal.js/dist/reveal.js"></script>
 
   <!-- reveal.js plugins -->
-  <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
-  <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
-  <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
+  <script src="reveal.js/plugin/notes/notes.js"></script>
+  <script src="reveal.js/plugin/search/search.js"></script>
+  <script src="reveal.js/plugin/zoom/zoom.js"></script>
 
   <script>
 
@@ -255,7 +178,7 @@ alt="Zzz…" />
         progress: true,
 
         // Display the page number of the current slide
-        slideNumber: false,
+        slideNumber: true,
 
         // 'all', 'print', or 'speaker'
         showSlideNumber: 'all',
@@ -360,7 +283,7 @@ alt="Zzz…" />
         previewLinks: false,
 
         // Transition style (none/fade/slide/convex/concave/zoom)
-        transition: 'slide',
+        transition: 'concave',
 
         // Transition speed (default/fast/slow)
         transitionSpeed: 'default',
