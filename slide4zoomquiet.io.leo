@@ -11,9 +11,11 @@
 <v t="zoomq.20250514154556.1"><vh>_pandoc2reveal.sh</vh></v>
 </v>
 <v t="zoomq.20220612212104.1"><vh>slides/</vh>
-<v t="zoomq.20230511211522.1"><vh>@auto pandoc2slide.md</vh></v>
-<v t="zoomq.20230511212243.1"><vh>Chaos42</vh>
+<v t="zoomq.20250515211657.1"><vh>public</vh>
+<v t="zoomq.20230511211522.1"><vh>@auto index.md</vh></v>
 <v t="zoomq.20231211205711.1"><vh>@auto AIGCxZh2life3.md</vh></v>
+</v>
+<v t="zoomq.20230511212243.1"><vh>Chaos42</vh>
 <v t="zoomq.20240521193237.1"><vh>@auto effecitc0.md</vh></v>
 <v t="zoomq.20240704202345.1"><vh>@auto effect4pandsc0.md</vh></v>
 <v t="zoomq.20250320214559.1"><vh>Hedy.org</vh>
@@ -1403,5 +1405,7 @@ fi #if [ -z $NAME ] ;then
 # pandoc "ctalk220908gdgzh.md" -o "ctalk220908gdgzh.pdf" --pdf-engine=xelatex --toc --toc-depth=4 --from markdown --template eisvogel --listings
 
 exit  0</t>
+<t tx="zoomq.20250515211657.1">@path public
+</t>
 </tnodes>
 </leo_file>

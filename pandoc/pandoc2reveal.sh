@@ -68,6 +68,7 @@ echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 cmd="pandoc \"$MD\" \
 -o \"$SLIDES\" \
 --standalone \
+--embed-resources \
 --css=custom.css \
 -t revealjs \
 -V revealjs-url=revealjs \
