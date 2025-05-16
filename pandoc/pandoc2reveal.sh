@@ -69,7 +69,7 @@ cmd="pandoc \"$MD\" \
 -o \"$SLIDES\" \
 --standalone \
 --embed-resources \
---css=custom.css \
+--css=#$FF \
 -t revealjs \
 -V revealjs-url=revealjs \
 -V slideNumber=true \
@@ -82,7 +82,7 @@ cmd="pandoc \"$MD\" \
 #-V margin=0.01 \
 #-V slideNumber=true \
 #-V progress=true \
-#--css=custom.css \
+#--css=#$FF \
 #-V transition=zoom \ fade,slide,convex,concave,zoom
 #-V theme=serif 
 
