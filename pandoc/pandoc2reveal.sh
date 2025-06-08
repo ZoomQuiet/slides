@@ -1,6 +1,6 @@
 #!/bin/sh
 #=========================================================== var defines
-VER="pandoc2reveal v.250514.13542"
+VER="pandoc2reveal v.250608.2142"
 
 # 定义主题映射
 declare -a THEME_MAP=(
@@ -66,10 +66,10 @@ echo "exp. reveal.js slides -> $SLIDES"
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 # 构建 pandoc 命令字符串，使用多行定义
 cmd="pandoc \"$MD\" \
--o \"$SLIDES\" \
+-o \"$AIMP/$SLIDES\" \
 --standalone \
 --embed-resources \
---css=#$FF \
+--css=custom.css \
 -t revealjs \
 -V revealjs-url=revealjs \
 -V slideNumber=true \
@@ -82,7 +82,7 @@ cmd="pandoc \"$MD\" \
 #-V margin=0.01 \
 #-V slideNumber=true \
 #-V progress=true \
-#--css=#$FF \
+#--css=custom.css \
 #-V transition=zoom \ fade,slide,convex,concave,zoom
 #-V theme=serif 
 
