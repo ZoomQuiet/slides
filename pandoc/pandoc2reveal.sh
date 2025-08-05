@@ -69,13 +69,13 @@ cmd="pandoc \"$MD\" \
 -o \"$AIMP/$SLIDES\" \
 --standalone \
 --embed-resources \
---css=custom.css \
 -t revealjs \
 -V revealjs-url=revealjs \
 -V slideNumber=true \
 -V progress=true \
 -V transition=concave \
 -V theme=\"$SELECTED_THEME\" "
+#--css=custom.css \
 #--standalone \
 #-t revealjs \
 #-V revealjs-url=./reveal.js \
