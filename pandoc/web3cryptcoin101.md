@@ -37,7 +37,9 @@
 > 爱好
 
 > - [22CC](https://www.youtube.com/playlist?list=PLbUdpHqxsZwF4z9kBEy8CD8MPu-kypA_6)
+>    - 22世纪学院
 >    - 35年前的 Sci-Fi 小说
+
 
 ------
 
@@ -46,8 +48,12 @@
 
 ------
 
-![2013](coscon/s20773481-rwipy.png?imageView2/2/h/510)
+![2013](coscon/s20773481-rwipy.png)
 
+
+------
+
+[![](img/250805-dspy-book.jpg)](https://book.douban.com/subject/37454087/)
 
 
 -------
@@ -73,8 +79,6 @@
 
 ## 自怼
 > DebugUself
-
-有心无心,自然聚集
 
 ```
 
