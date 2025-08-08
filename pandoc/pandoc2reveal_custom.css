@@ -1,0 +1,30 @@
+/* 使用系统本地字体，避免下载外部字体 */
+.reveal {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", 
+               "PingFang SC", "Microsoft YaHei", "Source Han Sans SC", 
+               "Noto Sans CJK SC", "WenQuanYi Micro Hei", Arial, sans-serif !important;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+               "PingFang SC", "Microsoft YaHei", "Source Han Sans SC",
+               "Noto Sans CJK SC", "WenQuanYi Micro Hei", Arial, sans-serif !important;
+  font-weight: 600;
+}
+
+/* 代码字体使用本地等宽字体 */
+.reveal pre,
+.reveal code {
+  font-family: "SF Mono", "Monaco", "Inconsolata", "Fira Code", 
+               "Source Code Pro", "Consolas", "Courier New", monospace !important;
+}
+
+/* 覆盖主题的字体设置 */
+.reveal.has-lato-font {
+  font-family: 'Lato Local', -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
