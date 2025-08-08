@@ -419,16 +419,13 @@ Token宇宙
 ## 防骗
 > 秘诀：天上不会掉馅饼
 
-## 开始提问
->- 对货币,你的理解?
->- 对虚拟货币,你的看法?
->- 对加密币的未来你的想象??
->- ...
-
 ## PS:
-[探讨信息化社会中中国传统思想的作用](https://zoomquiet.io/IMHO/19980101-chinese4internet/)
+> 推荐读物
 
-- 1998 科学哲学
+> - [一文说清“链上”和“链下” — FISCO BCOS 3\.0 v3\.11\.0 文档](https://fisco-bcos-doc.readthedocs.io/zh-cn/latest/docs/articles/1_conception/on_and_off_the_blockchain.html)
+> - 《比特币：一种点对点的电子现金系统》- 中本聪白皮书
+> - 《货币的非国家化》- 哈耶克
+> - 《Token经济》
 
 ## PPS:
 >- 忘记的必是不重要的
@@ -460,6 +457,12 @@ Token宇宙
 
 ![ask**DAMA**@**g**oo**g**le**g**roup**s**.com](img/kcn_ask-dama.jpg)
 
+## 开始提问
+>- 对货币,你的理解?
+>- 对虚拟货币,你的看法?
+>- 对加密币的未来你的想象??
+>- ...
+
 ## Q&A
 > ask**DAMA**@**g**oo**g**le**g**roup**s**.com
 
@@ -483,6 +486,7 @@ Token宇宙
 
 - 什么是教育?
 - 什么是编程?
+- [探讨信息化社会中中国传统思想的作用](https://zoomquiet.io/IMHO/19980101-chinese4internet/) 1998 科学哲学
 
 
 ------
