@@ -58,7 +58,8 @@ AIMP='../public'
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 echo base $FILENAME
 MD=$1.md
-SLIDES=$AIMP/$1.html
+BASE=${1##*/}
+SLIDES=$AIMP/$BASE.html
 echo "got draft <-- $MD"
 echo "exp. reveal.js slides -> $SLIDES"
 #exit  0
@@ -66,7 +67,7 @@ echo "exp. reveal.js slides -> $SLIDES"
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 # 构建 pandoc 命令字符串，使用多行定义
 cmd="pandoc \"$MD\" \
--o \"$AIMP/$SLIDES\" \
+-o \"$SLIDES\" \
 --standalone \
 --embed-resources \
 --css=pandoc2reveal_custom.css \
