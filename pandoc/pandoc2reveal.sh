@@ -61,7 +61,7 @@ MD=$1.md
 BASE=${1##*/}
 SLIDES=$AIMP/$BASE.html
 echo "got draft <-- $MD"
-echo "exp. reveal.js slides -> $SLIDES"
+echo "exp. revealjs slides -> $SLIDES"
 #exit  0
 
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
@@ -79,7 +79,7 @@ cmd="pandoc \"$MD\" \
 -V theme=\"$SELECTED_THEME\" "
 #--standalone \
 #-t revealjs \
-#-V revealjs-url=./reveal.js \
+#-V revealjs-url=revealjs \
 #-V margin=0.01 \
 #-V slideNumber=true \
 #-V progress=true \
