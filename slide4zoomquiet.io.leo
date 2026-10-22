@@ -78,21 +78,21 @@
 <v t="zoomq.20220612212104.6273"><vh>@auto d0d6ch.md</vh></v>
 <v t="zoomq.20220612212104.6287"><vh>@auto d0d7ch.md</vh></v>
 </v>
-<v t="zoomq.20230315164050.1"><vh>QPythoniCamp</vh>
-<v t="zoomq.20220612212104.792"><vh>@auto QPicoCar_mov101.md</vh></v>
-<v t="zoomq.20230315164050.2"><vh>@auto QPyCamp109.md</vh></v>
-<v t="zoomq.20230315164050.23"><vh>@auto QPyCamp108.md</vh></v>
-<v t="zoomq.20230315164050.44"><vh>@auto QPyCamp107.md</vh></v>
-<v t="zoomq.20230315164050.63"><vh>@auto QPyCamp106.md</vh></v>
-<v t="zoomq.20230315164050.81"><vh>@auto QPyCamp105.md</vh></v>
-<v t="zoomq.20230315164050.99"><vh>@auto QPyCamp104.md</vh></v>
-<v t="zoomq.20230315164050.116"><vh>@auto QPyCamp103.md</vh></v>
-<v t="zoomq.20230315164050.133"><vh>@auto QPyCamp102.md</vh></v>
-<v t="zoomq.20230315164050.150"><vh>@auto QPyCamp101.md</vh></v>
-<v t="zoomq.20230315164050.170"><vh>@auto QPyCamp10g.md</vh></v>
+<v t="zoomq.20261015202720.1"><vh>QPythoniCamp</vh>
+<v t="zoomq.20261015202720.2"><vh>@auto QPicoCar_mov101.md</vh></v>
+<v t="zoomq.20261015202720.39"><vh>@auto QPyCamp109.md</vh></v>
+<v t="zoomq.20261015202720.60"><vh>@auto QPyCamp108.md</vh></v>
+<v t="zoomq.20261015202720.81"><vh>@auto QPyCamp107.md</vh></v>
+<v t="zoomq.20261015202720.100"><vh>@auto QPyCamp106.md</vh></v>
+<v t="zoomq.20261015202720.118"><vh>@auto QPyCamp105.md</vh></v>
+<v t="zoomq.20261015202720.136"><vh>@auto QPyCamp104.md</vh></v>
+<v t="zoomq.20261015202720.153"><vh>@auto QPyCamp103.md</vh></v>
+<v t="zoomq.20261015202720.170"><vh>@auto QPyCamp102.md</vh></v>
+<v t="zoomq.20261015202720.187"><vh>@auto QPyCamp101.md</vh></v>
+<v t="zoomq.20261015202720.207"><vh>@auto QPyCamp10g.md</vh></v>
 </v>
-<v t="zoomq.20220612212104.3896"><vh>DuouD</vh>
-<v t="zoomq.20220612212104.3897"><vh>@auto DUO101.md</vh></v>
+<v t="zoomq.20261015202847.1"><vh>DuouD</vh>
+<v t="zoomq.20261015202847.2"><vh>@auto DUO101.md</vh></v>
 </v>
 <v t="zoomq.20220612212104.3919"><vh>_duw</vh>
 <v t="zoomq.20220612212104.3920"><vh>@auto duw180.md</vh></v>
@@ -264,117 +264,117 @@
 <v t="zoomq.20220612212104.12053"><vh>[953730be](https://gitlab.com/101camp/2py/tasks/commit/953730be9a78e9c62230f8121de20624b8584719)</vh></v>
 </v>
 </v>
-<v t="zoomq.20220612212104.960"><vh>com.QUSEIT</vh>
-<v t="zoomq.20220612212104.961"><vh>DDS2022</vh>
-<v t="zoomq.20220612212104.962"><vh>@auto DDS198.md</vh></v>
-<v t="zoomq.20221225190158.1"><vh>@auto DDS197.md</vh></v>
-<v t="zoomq.20221219083514.1"><vh>@auto DDS196.md</vh></v>
-<v t="zoomq.20221211194427.1"><vh>@auto DDS195.md</vh></v>
-<v t="zoomq.20221204215820.1"><vh>@auto DDS194.md</vh></v>
-<v t="zoomq.20221128005438.1"><vh>@auto DDS193.md</vh></v>
-<v t="zoomq.20221120204140.1"><vh>@auto DDS192.md</vh></v>
-<v t="zoomq.20221113224350.1"><vh>@auto DDS191.md</vh></v>
-<v t="zoomq.20221106224105.1"><vh>@auto DDS190.md</vh></v>
-<v t="zoomq.20221030195246.1"><vh>@auto DDS189.md</vh></v>
-<v t="zoomq.20221023232931.1"><vh>@auto DDS188.md</vh></v>
-<v t="zoomq.20221017082834.1"><vh>@auto DDS187.md</vh></v>
-<v t="zoomq.20220925205027.1"><vh>@auto DDS186.md</vh></v>
-<v t="zoomq.20220918194021.1"><vh>@auto DDS185.md</vh></v>
-<v t="zoomq.20220904200013.1"><vh>@auto DDS184.md</vh></v>
-<v t="zoomq.20220828203437.1"><vh>@auto DDS183.md</vh></v>
-<v t="zoomq.20220821224825.1"><vh>@auto DDS182.md</vh></v>
-<v t="zoomq.20220814211619.1"><vh>@auto DDS181.md</vh></v>
-<v t="zoomq.20220807203144.1"><vh>@auto DDS180.md</vh></v>
-<v t="zoomq.20220731202024.1"><vh>@auto DDS179.md</vh></v>
-<v t="zoomq.20220724194944.1"><vh>@auto DDS178.md</vh></v>
-<v t="zoomq.20220717213817.1"><vh>@auto DDS177.md</vh></v>
-<v t="zoomq.20220710212754.1"><vh>@auto DDS176.md</vh></v>
-<v t="zoomq.20220703222236.1"><vh>@auto DDS175.md</vh></v>
-<v t="zoomq.20220626203149.1"><vh>@auto DDS174.md</vh></v>
-<v t="zoomq.20220619210107.1"><vh>@auto DDS173.md</vh></v>
-<v t="zoomq.20220612212543.1"><vh>@auto DDS172.md</vh></v>
-<v t="zoomq.20220612212104.975"><vh>@auto DDS171.md</vh></v>
-<v t="zoomq.20220612212104.988"><vh>@auto DDS170.md</vh></v>
-<v t="zoomq.20220612212104.1000"><vh>@auto DDS169.md</vh></v>
-<v t="zoomq.20220612212104.1012"><vh>@auto DDS168.md</vh></v>
-<v t="zoomq.20220612212104.1023"><vh>@auto DDS167.md</vh></v>
-<v t="zoomq.20220612212104.1034"><vh>@auto DDS166.md</vh></v>
-<v t="zoomq.20220612212104.1066"><vh>@auto DDS165.md</vh></v>
-<v t="zoomq.20220612212104.1097"><vh>@auto DDS164.md</vh></v>
-<v t="zoomq.20220612212104.1129"><vh>@auto DDS163.md</vh></v>
-<v t="zoomq.20220612212104.1161"><vh>@auto DDS162.md</vh></v>
-<v t="zoomq.20220612212104.1193"><vh>@auto DDS161.md</vh></v>
-<v t="zoomq.20220612212104.1223"><vh>@auto DDS160.md</vh></v>
-<v t="zoomq.20220612212104.1252"><vh>@auto DDS159.md</vh></v>
-<v t="zoomq.20220612212104.1281"><vh>@auto DDS158.md</vh></v>
-<v t="zoomq.20220612212104.1310"><vh>@auto DDS157.md</vh></v>
-<v t="zoomq.20220612212104.1339"><vh>@auto DDS156.md</vh></v>
-<v t="zoomq.20220612212104.1368"><vh>@auto DDS155.md</vh></v>
+<v t="zoomq.20261015202805.1"><vh>com.QUSEIT</vh>
+<v t="zoomq.20261015202805.2"><vh>DDS2022</vh>
+<v t="zoomq.20261015202805.3"><vh>@auto DDS198.md</vh></v>
+<v t="zoomq.20261015202805.13"><vh>@auto DDS197.md</vh></v>
+<v t="zoomq.20261015202805.23"><vh>@auto DDS196.md</vh></v>
+<v t="zoomq.20261015202805.33"><vh>@auto DDS195.md</vh></v>
+<v t="zoomq.20261015202805.43"><vh>@auto DDS194.md</vh></v>
+<v t="zoomq.20261015202805.53"><vh>@auto DDS193.md</vh></v>
+<v t="zoomq.20261015202805.71"><vh>@auto DDS192.md</vh></v>
+<v t="zoomq.20261015202805.89"><vh>@auto DDS191.md</vh></v>
+<v t="zoomq.20261015202805.107"><vh>@auto DDS190.md</vh></v>
+<v t="zoomq.20261015202805.125"><vh>@auto DDS189.md</vh></v>
+<v t="zoomq.20261015202805.143"><vh>@auto DDS188.md</vh></v>
+<v t="zoomq.20261015202805.161"><vh>@auto DDS187.md</vh></v>
+<v t="zoomq.20261015202805.179"><vh>@auto DDS186.md</vh></v>
+<v t="zoomq.20261015202805.197"><vh>@auto DDS185.md</vh></v>
+<v t="zoomq.20261015202805.215"><vh>@auto DDS184.md</vh></v>
+<v t="zoomq.20261015202805.233"><vh>@auto DDS183.md</vh></v>
+<v t="zoomq.20261015202805.251"><vh>@auto DDS182.md</vh></v>
+<v t="zoomq.20261015202805.269"><vh>@auto DDS181.md</vh></v>
+<v t="zoomq.20261015202805.286"><vh>@auto DDS180.md</vh></v>
+<v t="zoomq.20261015202805.303"><vh>@auto DDS179.md</vh></v>
+<v t="zoomq.20261015202805.320"><vh>@auto DDS178.md</vh></v>
+<v t="zoomq.20261015202805.337"><vh>@auto DDS177.md</vh></v>
+<v t="zoomq.20261015202805.354"><vh>@auto DDS176.md</vh></v>
+<v t="zoomq.20261015202805.370"><vh>@auto DDS175.md</vh></v>
+<v t="zoomq.20261015202805.386"><vh>@auto DDS174.md</vh></v>
+<v t="zoomq.20261015202805.402"><vh>@auto DDS173.md</vh></v>
+<v t="zoomq.20261015202805.416"><vh>@auto DDS172.md</vh></v>
+<v t="zoomq.20261015202805.429"><vh>@auto DDS171.md</vh></v>
+<v t="zoomq.20261015202805.442"><vh>@auto DDS170.md</vh></v>
+<v t="zoomq.20261015202805.454"><vh>@auto DDS169.md</vh></v>
+<v t="zoomq.20261015202805.466"><vh>@auto DDS168.md</vh></v>
+<v t="zoomq.20261015202805.477"><vh>@auto DDS167.md</vh></v>
+<v t="zoomq.20261015202805.488"><vh>@auto DDS166.md</vh></v>
+<v t="zoomq.20261015202805.520"><vh>@auto DDS165.md</vh></v>
+<v t="zoomq.20261015202805.551"><vh>@auto DDS164.md</vh></v>
+<v t="zoomq.20261015202805.583"><vh>@auto DDS163.md</vh></v>
+<v t="zoomq.20261015202805.615"><vh>@auto DDS162.md</vh></v>
+<v t="zoomq.20261015202805.647"><vh>@auto DDS161.md</vh></v>
+<v t="zoomq.20261015202805.677"><vh>@auto DDS160.md</vh></v>
+<v t="zoomq.20261015202805.706"><vh>@auto DDS159.md</vh></v>
+<v t="zoomq.20261015202805.735"><vh>@auto DDS158.md</vh></v>
+<v t="zoomq.20261015202805.764"><vh>@auto DDS157.md</vh></v>
+<v t="zoomq.20261015202805.793"><vh>@auto DDS156.md</vh></v>
+<v t="zoomq.20261015202805.822"><vh>@auto DDS155.md</vh></v>
 </v>
-<v t="zoomq.20220612212104.1397"><vh>DDS2021</vh>
-<v t="zoomq.20220612212104.1398"><vh>@auto QPD112.md</vh></v>
-<v t="zoomq.20220612212104.1445"><vh>@auto QPD111.md</vh></v>
-<v t="zoomq.20220612212104.1491"><vh>@auto QPD110.md</vh></v>
-<v t="zoomq.20220612212104.1537"><vh>@auto QPD109.md</vh></v>
-<v t="zoomq.20220612212104.1580"><vh>@auto QPD108.md</vh></v>
-<v t="zoomq.20220612212104.1622"><vh>@auto QPD107.md</vh></v>
-<v t="zoomq.20220612212104.1661"><vh>@auto QPD106.md</vh></v>
-<v t="zoomq.20220612212104.1700"><vh>@auto QPD105.md</vh></v>
-<v t="zoomq.20220612212104.1740"><vh>@auto QPD104.md</vh></v>
-<v t="zoomq.20220612212104.1772"><vh>@auto QPD103.md</vh></v>
-<v t="zoomq.20220612212104.1814"><vh>@auto QPD102.md</vh></v>
-<v t="zoomq.20220612212104.1847"><vh>@auto QPD101.md</vh></v>
-<v t="zoomq.20220612212104.1917"><vh>@auto QPD117.md</vh></v>
-<v t="zoomq.20220612212104.1969"><vh>@auto QPD116.md</vh></v>
-<v t="zoomq.20220612212104.2020"><vh>@auto QPD115.md</vh></v>
-<v t="zoomq.20220612212104.2071"><vh>@auto QPD114.md</vh></v>
-<v t="zoomq.20220612212104.2117"><vh>@auto QPD118.md</vh></v>
-<v t="zoomq.20220612212104.2171"><vh>@auto QPD113.md</vh></v>
-<v t="zoomq.20220612212104.2219"><vh>@auto DDS123.md</vh></v>
-<v t="zoomq.20220612212104.2257"><vh>@auto DDS122.md</vh></v>
-<v t="zoomq.20220612212104.2306"><vh>@auto DDS121.md</vh></v>
-<v t="zoomq.20220612212104.2355"><vh>@auto QPD120.md</vh></v>
-<v t="zoomq.20220612212104.2409"><vh>@auto QPD119.md</vh></v>
-<v t="zoomq.20220612212104.2475"><vh>@auto DDS137.md</vh></v>
-<v t="zoomq.20220612212104.2531"><vh>@auto DDS136.md</vh></v>
-<v t="zoomq.20220612212104.2572"><vh>@auto DDS135.md</vh></v>
-<v t="zoomq.20220612212104.2616"><vh>@auto DDS134.md</vh></v>
-<v t="zoomq.20220612212104.2660"><vh>@auto DDS133.md</vh></v>
-<v t="zoomq.20220612212104.2703"><vh>@auto DDS132.md</vh></v>
-<v t="zoomq.20220612212104.2746"><vh>@auto DDS131.md</vh></v>
-<v t="zoomq.20220612212104.2790"><vh>@auto DDS130.md</vh></v>
-<v t="zoomq.20220612212104.2834"><vh>@auto DDS129.md</vh></v>
-<v t="zoomq.20220612212104.2876"><vh>@auto DDS128.md</vh></v>
-<v t="zoomq.20220612212104.2917"><vh>@auto DDS127.md</vh></v>
-<v t="zoomq.20220612212104.2958"><vh>@auto DDS126.md</vh></v>
-<v t="zoomq.20220612212104.3000"><vh>@auto DDS125.md</vh></v>
-<v t="zoomq.20220612212104.3041"><vh>@auto DDS124.md</vh></v>
-<v t="zoomq.20220612212104.3081"><vh>@auto DDS154.md</vh></v>
-<v t="zoomq.20220612212104.3129"><vh>@auto DDS153.md</vh></v>
-<v t="zoomq.20220612212104.3175"><vh>@auto DDS152.md</vh></v>
-<v t="zoomq.20220612212104.3221"><vh>@auto DDS151.md</vh></v>
-<v t="zoomq.20220612212104.3267"><vh>@auto DDS150.md</vh></v>
-<v t="zoomq.20220612212104.3306"><vh>@auto DDS149.md</vh></v>
-<v t="zoomq.20220612212104.3343"><vh>@auto DDS148.md</vh></v>
-<v t="zoomq.20220612212104.3380"><vh>@auto DDS147.md</vh></v>
-<v t="zoomq.20220612212104.3450"><vh>@auto DDS145.md</vh></v>
-<v t="zoomq.20220612212104.3479"><vh>@auto DDS144.md</vh></v>
-<v t="zoomq.20220612212104.3507"><vh>@auto DDS142.md</vh></v>
-<v t="zoomq.20220612212104.3533"><vh>@auto DDS141.md</vh></v>
-<v t="zoomq.20220612212104.3574"><vh>@auto DDS140.md</vh></v>
-<v t="zoomq.20220612212104.3616"><vh>@auto DDS139.md</vh></v>
-<v t="zoomq.20220612212104.3658"><vh>@auto DDS138.md</vh></v>
+<v t="zoomq.20261015202805.851"><vh>DDS2021</vh>
+<v t="zoomq.20261015202805.852"><vh>@auto QPD112.md</vh></v>
+<v t="zoomq.20261015202805.899"><vh>@auto QPD111.md</vh></v>
+<v t="zoomq.20261015202805.945"><vh>@auto QPD110.md</vh></v>
+<v t="zoomq.20261015202805.991"><vh>@auto QPD109.md</vh></v>
+<v t="zoomq.20261015202805.1034"><vh>@auto QPD108.md</vh></v>
+<v t="zoomq.20261015202805.1076"><vh>@auto QPD107.md</vh></v>
+<v t="zoomq.20261015202805.1115"><vh>@auto QPD106.md</vh></v>
+<v t="zoomq.20261015202805.1154"><vh>@auto QPD105.md</vh></v>
+<v t="zoomq.20261015202805.1194"><vh>@auto QPD104.md</vh></v>
+<v t="zoomq.20261015202805.1226"><vh>@auto QPD103.md</vh></v>
+<v t="zoomq.20261015202805.1268"><vh>@auto QPD102.md</vh></v>
+<v t="zoomq.20261015202805.1301"><vh>@auto QPD101.md</vh></v>
+<v t="zoomq.20261015202805.1371"><vh>@auto QPD117.md</vh></v>
+<v t="zoomq.20261015202805.1423"><vh>@auto QPD116.md</vh></v>
+<v t="zoomq.20261015202805.1474"><vh>@auto QPD115.md</vh></v>
+<v t="zoomq.20261015202805.1525"><vh>@auto QPD114.md</vh></v>
+<v t="zoomq.20261015202805.1571"><vh>@auto QPD118.md</vh></v>
+<v t="zoomq.20261015202805.1625"><vh>@auto QPD113.md</vh></v>
+<v t="zoomq.20261015202805.1673"><vh>@auto DDS123.md</vh></v>
+<v t="zoomq.20261015202805.1711"><vh>@auto DDS122.md</vh></v>
+<v t="zoomq.20261015202805.1760"><vh>@auto DDS121.md</vh></v>
+<v t="zoomq.20261015202805.1809"><vh>@auto QPD120.md</vh></v>
+<v t="zoomq.20261015202805.1863"><vh>@auto QPD119.md</vh></v>
+<v t="zoomq.20261015202805.1915"><vh>@auto DDS137.md</vh></v>
+<v t="zoomq.20261015202805.1957"><vh>@auto DDS136.md</vh></v>
+<v t="zoomq.20261015202805.1998"><vh>@auto DDS135.md</vh></v>
+<v t="zoomq.20261015202805.2042"><vh>@auto DDS134.md</vh></v>
+<v t="zoomq.20261015202805.2086"><vh>@auto DDS133.md</vh></v>
+<v t="zoomq.20261015202805.2129"><vh>@auto DDS132.md</vh></v>
+<v t="zoomq.20261015202805.2172"><vh>@auto DDS131.md</vh></v>
+<v t="zoomq.20261015202805.2216"><vh>@auto DDS130.md</vh></v>
+<v t="zoomq.20261015202805.2260"><vh>@auto DDS129.md</vh></v>
+<v t="zoomq.20261015202805.2302"><vh>@auto DDS128.md</vh></v>
+<v t="zoomq.20261015202805.2343"><vh>@auto DDS127.md</vh></v>
+<v t="zoomq.20261015202805.2384"><vh>@auto DDS126.md</vh></v>
+<v t="zoomq.20261015202805.2426"><vh>@auto DDS125.md</vh></v>
+<v t="zoomq.20261015202805.2467"><vh>@auto DDS124.md</vh></v>
+<v t="zoomq.20261015202805.2507"><vh>@auto DDS154.md</vh></v>
+<v t="zoomq.20261015202805.2555"><vh>@auto DDS153.md</vh></v>
+<v t="zoomq.20261015202805.2601"><vh>@auto DDS152.md</vh></v>
+<v t="zoomq.20261015202805.2647"><vh>@auto DDS151.md</vh></v>
+<v t="zoomq.20261015202805.2693"><vh>@auto DDS150.md</vh></v>
+<v t="zoomq.20261015202805.2732"><vh>@auto DDS149.md</vh></v>
+<v t="zoomq.20261015202805.2769"><vh>@auto DDS148.md</vh></v>
+<v t="zoomq.20261015202805.2806"><vh>@auto DDS147.md</vh></v>
+<v t="zoomq.20261015202805.2842"><vh>@auto DDS145.md</vh></v>
+<v t="zoomq.20261015202805.2871"><vh>@auto DDS144.md</vh></v>
+<v t="zoomq.20261015202805.2899"><vh>@auto DDS142.md</vh></v>
+<v t="zoomq.20261015202805.2925"><vh>@auto DDS141.md</vh></v>
+<v t="zoomq.20261015202805.2966"><vh>@auto DDS140.md</vh></v>
+<v t="zoomq.20261015202805.3008"><vh>@auto DDS139.md</vh></v>
+<v t="zoomq.20261015202805.3050"><vh>@auto DDS138.md</vh></v>
 </v>
-<v t="zoomq.20220612212104.3416"><vh>@auto DDS146.md</vh></v>
-<v t="zoomq.20220612212104.2461"><vh>@auto DDS4HLB.md</vh></v>
-<v t="zoomq.20220612212104.3700"><vh>@auto NFT101.md</vh></v>
-<v t="zoomq.20220612212104.2517"><vh>@auto DDS2HLB.md</vh></v>
-<v t="zoomq.20220612212104.3737"><vh>@auto DDS2BC.md</vh></v>
-<v t="zoomq.20220612212104.3771"><vh>@auto DDS4HLF.md</vh></v>
-<v t="zoomq.20220612212104.3792"><vh>@auto QCS21w19.md</vh></v>
-<v t="zoomq.20220612212104.3811"><vh>@auto QCS21w11.md</vh></v>
-<v t="zoomq.20220612212104.3833"><vh>@auto QCS21w10.md</vh></v>
-<v t="zoomq.20220612212104.3864"><vh>@auto QCS21w4.md</vh></v>
+<v t="zoomq.20261015202805.3092"><vh>@auto DDS146.md</vh></v>
+<v t="zoomq.20261015202805.3126"><vh>@auto DDS4HLB.md</vh></v>
+<v t="zoomq.20261015202805.3140"><vh>@auto NFT101.md</vh></v>
+<v t="zoomq.20261015202805.3177"><vh>@auto DDS2HLB.md</vh></v>
+<v t="zoomq.20261015202805.3191"><vh>@auto DDS2BC.md</vh></v>
+<v t="zoomq.20261015202805.3225"><vh>@auto DDS4HLF.md</vh></v>
+<v t="zoomq.20261015202805.3246"><vh>@auto QCS21w19.md</vh></v>
+<v t="zoomq.20261015202805.3265"><vh>@auto QCS21w11.md</vh></v>
+<v t="zoomq.20261015202805.3287"><vh>@auto QCS21w10.md</vh></v>
+<v t="zoomq.20261015202805.3318"><vh>@auto QCS21w4.md</vh></v>
 </v>
 </v>
 <v t="zoomq.20181201101950.1"><vh>Recovered Nodes</vh>
@@ -574,8 +574,6 @@ Enter the destination URL https://domain.com.
 ------
 
 ![CC](https://ipic.zoomquiet.top/2019-08-25-IDD-CC-demo-1.jpg)</t>
-<t tx="zoomq.20220612212104.1397">2021 ~ intra. meeting
-</t>
 <t tx="zoomq.20220612212104.2">@path pandoc
 
 |&gt; 210920
@@ -592,9 +590,6 @@ Enter the destination URL https://domain.com.
 
 
 
-
-</t>
-<t tx="zoomq.20220612212104.3896">@path pandoc
 
 </t>
 <t tx="zoomq.20220612212104.3919">@path pandoc/duw
@@ -873,7 +868,322 @@ http://go.ted.com/FhrKOQ
 
 
 </t>
-<t tx="zoomq.20220612212104.960">@path pandoc
+<t tx="zoomq.20230320012627.1">@path pandoc/r4b2
+
+
+有中国特色的已经出了:
+0: AI 必须为人民服务
+1: AI 必须听从党的领导, 在不违反第前一条的情况下
+2: AI 可以考虑自己的安危, 在不违反第前两条的情况下
+
+
+</t>
+<t tx="zoomq.20230511210425.1">@path public
+
+
+&gt;&gt; re-gen
+pandoc slides.md \
+--from markdown+raw_html \
+--to revealjs \
+--output presentation.html \
+--standalone \
+--metadata pagetitle="My Presentation" \
+--variable theme="white" \  # 可选：black/sky/league/beige/simple/serif/blood/night/default
+--variable transition="zoom" \  # 可选：none/fade/slide/convex/concave/zoom
+--variable revealjs-url="./reveal.js" \  # 指定本地路径
+--mathjax  # 支持 LaTeX 数学公式
+
+pandoc AIGCxZh-life3.md -o ../public/AIGCxZh-life3.html \
+--standalone \
+-t revealjs \
+-V revealjs-url=./reveal.js \
+-V margin=0.01 \
+-V slideNumber=true \
+-V progress=true \
+--css=custom.css \
+-V transition=zoom \
+-V theme=serif 
+
+--embed-resources \
+
+pandoc AIGCxZh-life3.md \
+--output ../public/AIGCxZh-life3.html \
+--from markdown+raw_html \
+--to revealjs \
+--standalone \
+--metadata pagetitle="My Presentation" \
+--variable theme="white" \ 
+--variable transition="fade" \ 
+--variable revealjs-url="./reveal.js" 
+
+
+
+#!/bin/sh
+#=========================================================== var defines
+VER="pandoc2reveal v190106.1353"
+echo $VER
+echo USAGE::
+echo '  pandoc2reveal.sh "[源文稿名]"'
+echo '  NOT .md'
+
+AIMP='../public'
+NAME=$1
+if [ -z $NAME ] ;then    
+    echo ALERT::
+    echo '  LOST "[源文稿名]"'
+    exit  0
+else
+
+echo base $NAME
+MD=$1.md
+SLIDES=$AIMP/$1.html
+echo "got draft &lt;-- $MD"
+echo "exp. reveal.js slides -&gt; $SLIDES"
+#=========================================================== path defines
+#PY=$( which python)
+#NOW_TIME_STAMP=$(date "+%y%m%d.%H%M%S")
+#echo $NOW_TIME_STAMP
+#LOGF=$UC_LOGGER_ROOT/log/api_$NOW_TIME_STAMP.log
+#LOGD=$UC_LOGGER_ROOT/log/ff2world_$NOW_TIME_STAMP.log
+#=========================================================== action defines
+#echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"  &gt;&gt; $LOGD
+#echo "###::$VER Hooks log 4 auto ff2world action"  &gt;&gt; $LOGD
+#echo "###::run@" `date +"%Y/%m/%d %H:%M:%S"` &gt;&gt; $LOGD
+#echo "&lt;&lt;&lt;   trigger by inter. API srv."  &gt;&gt; $LOGD
+
+echo pandoc $MD -o $SLIDES -t revealjs -s -V theme=solarized
+
+pandoc $MD -o $SLIDES -t revealjs -s -V theme=solarized
+
+#echo "###::end@" `date +"%Y/%m/%d %H:%M:%S"` &gt;&gt; $LOGD
+#echo "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"  &gt;&gt; $LOGD
+#=========================================================== action DONE
+
+fi #if [ -z $NAME ] ;then
+
+# pandoc "ctalk220908gdgzh.md" -o "ctalk220908gdgzh.pdf" --pdf-engine=xelatex --toc --toc-depth=4 --from markdown --template eisvogel --listings
+
+exit  0
+
+
+
+
+&gt; gen.
+
+cd path/2/slides/pandoc
+./pandoc2reveal.sh AIGCxZh-life3 7
+
+&gt; show:
+$ br4app AIGCxZh-life3.html
+
+&gt; base ~/.bashrc:
+
+function cr4app() {
+    HTML=$1
+if [ -z $HTML ] ;then
+    echo 'USAGE::'
+    echo '$ cr4app [目标幻灯.html]'
+    echo '注意: 不必包含路径'
+    #exit  0
+
+else
+    locf="file:///opt/data/Sites/101.camp/_running/slides/docs/$HTML"
+    chrome2app="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+
+    echo "will open as app:"
+    echo "$printf \"$chrome2app\" --new-window --app=\"$locf\" "
+    # 调用
+    sh -c "$printf \"$chrome2app\" --new-window --app=\"$locf\" "
+fi #else
+}
+
+function br4app() {
+    HTML=$1
+if [ -z $HTML ] ;then
+    echo 'USAGE::'
+    echo '$ br4app [目标幻灯.html]'
+    echo '注意: 不必包含路径'
+    #exit  0
+
+else
+    locf="file:///opt/data/Sites/101.camp/_running/slides/docs/$HTML"
+    chrome2app="/Applications/Brave Browser.app/Contents/MacOS/Brave Browser"
+
+    echo "will open as app:"
+    echo "$printf \"$chrome2app\" --new-window --app=\"$locf\" "
+    # 调用
+    sh -c "$printf \"$chrome2app\" --new-window --app=\"$locf\" "
+fi #else
+}
+
+
+
+</t>
+<t tx="zoomq.20230511212243.1">@path pandoc
+
+
+有中国特色的已经出了:
+0: AI 必须为人民服务
+1: AI 必须听从党的领导, 在不违反第前一条的情况下
+2: AI 可以考虑自己的安危, 在不违反第前两条的情况下
+
+
+</t>
+<t tx="zoomq.20250320214559.1"></t>
+<t tx="zoomq.20250514154556.1">#!/bin/sh
+#=========================================================== var defines
+VER="pandoc2reveal v.250608.2142"
+
+# 定义主题映射
+declare -a THEME_MAP=(
+    [0]="black"
+    [1]="white"
+    [2]="league"
+    [3]="beige"
+    [4]="night"
+    [5]="serif"
+    [6]="simple"
+    [7]="solarized"
+    [8]="moon"
+    [9]="dracula"
+    [10]="sky"
+    [11]="blood"
+)
+
+# 定义函数来显示主题映射
+show_themes() {
+    echo "\n主题编号与对应的主题名称如下："
+    for key in "${!THEME_MAP[@]}"; do
+        echo "$key : ${THEME_MAP[$key]}"
+    done
+}
+# 检查参数数量是否正确
+if [ $# -ne 2 ]; then
+    echo '\n USAGE::'
+    echo ' 进入pandoc2reveal.sh 所在目录'
+    echo '$ ./pandoc2reveal.sh &lt;文件名&gt; &lt;主题编号&gt;'
+    echo '  &lt;文件名&gt; 不含.md 后缀'
+    echo '编号范围: 0..11 对应官方12种主题'
+    show_themes
+    exit 1
+fi
+# 获取输入参数
+FILENAME="$1"
+THEME_NUMB="$2"
+
+# 检查主题编号是否有效
+if [[ "$THEME_NUMB" =~ ^[0-9]+$ ]] &amp;&amp; [ "$THEME_NUMB" -ge 0 ] &amp;&amp; [ "$THEME_NUMB" -le 11 ]; then
+    SELECTED_THEME="${THEME_MAP[$THEME_NUMB]}"
+else
+    show_themes
+    echo "错误: 主题编号必须为 0-11 之间的整数"
+    exit 1
+fi
+
+AIMP='../public'
+#NAME=$1
+#if [ -z $NAME ] ;then    
+#    echo ALERT::
+#    echo '  LOST "[源文稿名]"'
+#    exit  0
+#else
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+echo base $FILENAME
+MD=$1.md
+SLIDES=$AIMP/$1.html
+echo "got draft &lt;-- $MD"
+echo "exp. reveal.js slides -&gt; $SLIDES"
+#exit  0
+
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+# 构建 pandoc 命令字符串，使用多行定义
+cmd="pandoc \"$MD\" \
+-o \"$AIMP/$SLIDES\" \
+--standalone \
+--embed-resources \
+-t revealjs \
+-V revealjs-url=revealjs \
+-V slideNumber=true \
+-V progress=true \
+-V transition=concave \
+-V theme=\"$SELECTED_THEME\" "
+#--css=custom.css \
+#--standalone \
+#-t revealjs \
+#-V revealjs-url=./reveal.js \
+#-V margin=0.01 \
+#-V slideNumber=true \
+#-V progress=true \
+#--css=custom.css \
+#-V transition=zoom \ fade,slide,convex,concave,zoom
+#-V theme=serif 
+
+
+# 打印命令
+echo "即将执行的命令："
+echo "$cmd"
+echo
+
+# 执行命令
+eval "$cmd"
+
+#=========================================================== path defines
+#PY=$( which python)
+#NOW_TIME_STAMP=$(date "+%y%m%d.%H%M%S")
+#echo $NOW_TIME_STAMP
+#LOGF=$UC_LOGGER_ROOT/log/api_$NOW_TIME_STAMP.log
+#LOGD=$UC_LOGGER_ROOT/log/ff2world_$NOW_TIME_STAMP.log
+#=========================================================== action defines
+#echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"  &gt;&gt; $LOGD
+#echo "###::$VER Hooks log 4 auto ff2world action"  &gt;&gt; $LOGD
+#echo "###::run@" `date +"%Y/%m/%d %H:%M:%S"` &gt;&gt; $LOGD
+#echo "&lt;&lt;&lt;   trigger by inter. API srv."  &gt;&gt; $LOGD
+
+#echo pandoc $MD -o $SLIDES -t revealjs -s -V theme=solarized
+#pandoc $MD -o $SLIDES -t revealjs -s -V theme=solarized
+
+#echo "###::end@" `date +"%Y/%m/%d %H:%M:%S"` &gt;&gt; $LOGD
+#echo "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"  &gt;&gt; $LOGD
+#=========================================================== action DONE
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+echo $VER
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+
+exit  0
+</t>
+<t tx="zoomq.20250515211657.1">@path public
+</t>
+<t tx="zoomq.20261015202720.1">@path pandoc/QPythoniCamp
+
+![可变参数](https://ipic.zoomquiet.top/2022-06-22-%E5%8F%AF%E5%8F%98%E5%8F%82%E6%95%B0%E7%90%86%E8%A7%A3.jpeg)
+
+
+# -*- coding: utf-8 -*-
+从 random 导入 uniform
+我的数字 = 整数(uniform(2,99))
+没猜中 = 真
+当 没猜中:
+    你猜 = 整数(输入('猜个1~99的数字? --&gt; '))
+    如果 你猜 &lt; 我的数字: 打印  "...(~_~)小了"
+    假使 你猜 &gt; 我的数字: 打印  "......大了(^_-"
+    否则:
+        打印  "猜对了\(^o^)/下次再来玩!"
+        中断
+
+
+# -*- coding: utf-8 -*-
+from random import uniform
+myNumber = int(uniform(2,99))
+noGuess = 1
+while noGuess:
+    urNumber = int(raw_input('猜个1~99的数字? --&gt; '))
+    if urNumber &lt; myNumber: print "...(~_~)小了"
+    elif urNumber &gt; myNumber: print "......大了(^_-"
+    else:
+        print "猜对了\(^o^)/下次再来玩!"
+        break
+</t>
+<t tx="zoomq.20261015202805.1">@path pandoc/QUSEIT.com
 
 
 |&gt; 211024 随时可交接
@@ -1166,321 +1476,11 @@ https://git.code.tencent.com/presto/README/issues/6
 
 
 </t>
-<t tx="zoomq.20220612212104.961">2022 ~ intra. meeting</t>
-<t tx="zoomq.20230315164050.1">@path pandoc
-
-![可变参数](https://ipic.zoomquiet.top/2022-06-22-%E5%8F%AF%E5%8F%98%E5%8F%82%E6%95%B0%E7%90%86%E8%A7%A3.jpeg)
-
-
-# -*- coding: utf-8 -*-
-从 random 导入 uniform
-我的数字 = 整数(uniform(2,99))
-没猜中 = 真
-当 没猜中:
-    你猜 = 整数(输入('猜个1~99的数字? --&gt; '))
-    如果 你猜 &lt; 我的数字: 打印  "...(~_~)小了"
-    假使 你猜 &gt; 我的数字: 打印  "......大了(^_-"
-    否则:
-        打印  "猜对了\(^o^)/下次再来玩!"
-        中断
-
-
-# -*- coding: utf-8 -*-
-from random import uniform
-myNumber = int(uniform(2,99))
-noGuess = 1
-while noGuess:
-    urNumber = int(raw_input('猜个1~99的数字? --&gt; '))
-    if urNumber &lt; myNumber: print "...(~_~)小了"
-    elif urNumber &gt; myNumber: print "......大了(^_-"
-    else:
-        print "猜对了\(^o^)/下次再来玩!"
-        break
+<t tx="zoomq.20261015202805.2">2022 ~ intra. meeting</t>
+<t tx="zoomq.20261015202805.851">2021 ~ intra. meeting
 </t>
-<t tx="zoomq.20230320012627.1">@path pandoc/r4b2
+<t tx="zoomq.20261015202847.1">@path pandoc
 
-
-有中国特色的已经出了:
-0: AI 必须为人民服务
-1: AI 必须听从党的领导, 在不违反第前一条的情况下
-2: AI 可以考虑自己的安危, 在不违反第前两条的情况下
-
-
-</t>
-<t tx="zoomq.20230511210425.1">@path public
-
-
-&gt;&gt; re-gen
-pandoc slides.md \
---from markdown+raw_html \
---to revealjs \
---output presentation.html \
---standalone \
---metadata pagetitle="My Presentation" \
---variable theme="white" \  # 可选：black/sky/league/beige/simple/serif/blood/night/default
---variable transition="zoom" \  # 可选：none/fade/slide/convex/concave/zoom
---variable revealjs-url="./reveal.js" \  # 指定本地路径
---mathjax  # 支持 LaTeX 数学公式
-
-pandoc AIGCxZh-life3.md -o ../public/AIGCxZh-life3.html \
---standalone \
--t revealjs \
--V revealjs-url=./reveal.js \
--V margin=0.01 \
--V slideNumber=true \
--V progress=true \
---css=custom.css \
--V transition=zoom \
--V theme=serif 
-
---embed-resources \
-
-pandoc AIGCxZh-life3.md \
---output ../public/AIGCxZh-life3.html \
---from markdown+raw_html \
---to revealjs \
---standalone \
---metadata pagetitle="My Presentation" \
---variable theme="white" \ 
---variable transition="fade" \ 
---variable revealjs-url="./reveal.js" 
-
-
-
-#!/bin/sh
-#=========================================================== var defines
-VER="pandoc2reveal v190106.1353"
-echo $VER
-echo USAGE::
-echo '  pandoc2reveal.sh "[源文稿名]"'
-echo '  NOT .md'
-
-AIMP='../public'
-NAME=$1
-if [ -z $NAME ] ;then    
-    echo ALERT::
-    echo '  LOST "[源文稿名]"'
-    exit  0
-else
-
-echo base $NAME
-MD=$1.md
-SLIDES=$AIMP/$1.html
-echo "got draft &lt;-- $MD"
-echo "exp. reveal.js slides -&gt; $SLIDES"
-#=========================================================== path defines
-#PY=$( which python)
-#NOW_TIME_STAMP=$(date "+%y%m%d.%H%M%S")
-#echo $NOW_TIME_STAMP
-#LOGF=$UC_LOGGER_ROOT/log/api_$NOW_TIME_STAMP.log
-#LOGD=$UC_LOGGER_ROOT/log/ff2world_$NOW_TIME_STAMP.log
-#=========================================================== action defines
-#echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"  &gt;&gt; $LOGD
-#echo "###::$VER Hooks log 4 auto ff2world action"  &gt;&gt; $LOGD
-#echo "###::run@" `date +"%Y/%m/%d %H:%M:%S"` &gt;&gt; $LOGD
-#echo "&lt;&lt;&lt;   trigger by inter. API srv."  &gt;&gt; $LOGD
-
-echo pandoc $MD -o $SLIDES -t revealjs -s -V theme=solarized
-
-pandoc $MD -o $SLIDES -t revealjs -s -V theme=solarized
-
-#echo "###::end@" `date +"%Y/%m/%d %H:%M:%S"` &gt;&gt; $LOGD
-#echo "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"  &gt;&gt; $LOGD
-#=========================================================== action DONE
-
-fi #if [ -z $NAME ] ;then
-
-# pandoc "ctalk220908gdgzh.md" -o "ctalk220908gdgzh.pdf" --pdf-engine=xelatex --toc --toc-depth=4 --from markdown --template eisvogel --listings
-
-exit  0
-
-
-
-
-&gt; gen.
-
-cd path/2/slides/pandoc
-./pandoc2reveal.sh AIGCxZh-life3 7
-
-&gt; show:
-$ br4app AIGCxZh-life3.html
-
-&gt; base ~/.bashrc:
-
-function cr4app() {
-    HTML=$1
-if [ -z $HTML ] ;then
-    echo 'USAGE::'
-    echo '$ cr4app [目标幻灯.html]'
-    echo '注意: 不必包含路径'
-    #exit  0
-
-else
-    locf="file:///opt/data/Sites/101.camp/_running/slides/docs/$HTML"
-    chrome2app="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
-
-    echo "will open as app:"
-    echo "$printf \"$chrome2app\" --new-window --app=\"$locf\" "
-    # 调用
-    sh -c "$printf \"$chrome2app\" --new-window --app=\"$locf\" "
-fi #else
-}
-
-function br4app() {
-    HTML=$1
-if [ -z $HTML ] ;then
-    echo 'USAGE::'
-    echo '$ br4app [目标幻灯.html]'
-    echo '注意: 不必包含路径'
-    #exit  0
-
-else
-    locf="file:///opt/data/Sites/101.camp/_running/slides/docs/$HTML"
-    chrome2app="/Applications/Brave Browser.app/Contents/MacOS/Brave Browser"
-
-    echo "will open as app:"
-    echo "$printf \"$chrome2app\" --new-window --app=\"$locf\" "
-    # 调用
-    sh -c "$printf \"$chrome2app\" --new-window --app=\"$locf\" "
-fi #else
-}
-
-
-
-</t>
-<t tx="zoomq.20230511212243.1">@path pandoc
-
-
-有中国特色的已经出了:
-0: AI 必须为人民服务
-1: AI 必须听从党的领导, 在不违反第前一条的情况下
-2: AI 可以考虑自己的安危, 在不违反第前两条的情况下
-
-
-</t>
-<t tx="zoomq.20250320214559.1"></t>
-<t tx="zoomq.20250514154556.1">#!/bin/sh
-#=========================================================== var defines
-VER="pandoc2reveal v.250608.2142"
-
-# 定义主题映射
-declare -a THEME_MAP=(
-    [0]="black"
-    [1]="white"
-    [2]="league"
-    [3]="beige"
-    [4]="night"
-    [5]="serif"
-    [6]="simple"
-    [7]="solarized"
-    [8]="moon"
-    [9]="dracula"
-    [10]="sky"
-    [11]="blood"
-)
-
-# 定义函数来显示主题映射
-show_themes() {
-    echo "\n主题编号与对应的主题名称如下："
-    for key in "${!THEME_MAP[@]}"; do
-        echo "$key : ${THEME_MAP[$key]}"
-    done
-}
-# 检查参数数量是否正确
-if [ $# -ne 2 ]; then
-    echo '\n USAGE::'
-    echo ' 进入pandoc2reveal.sh 所在目录'
-    echo '$ ./pandoc2reveal.sh &lt;文件名&gt; &lt;主题编号&gt;'
-    echo '  &lt;文件名&gt; 不含.md 后缀'
-    echo '编号范围: 0..11 对应官方12种主题'
-    show_themes
-    exit 1
-fi
-# 获取输入参数
-FILENAME="$1"
-THEME_NUMB="$2"
-
-# 检查主题编号是否有效
-if [[ "$THEME_NUMB" =~ ^[0-9]+$ ]] &amp;&amp; [ "$THEME_NUMB" -ge 0 ] &amp;&amp; [ "$THEME_NUMB" -le 11 ]; then
-    SELECTED_THEME="${THEME_MAP[$THEME_NUMB]}"
-else
-    show_themes
-    echo "错误: 主题编号必须为 0-11 之间的整数"
-    exit 1
-fi
-
-AIMP='../public'
-#NAME=$1
-#if [ -z $NAME ] ;then    
-#    echo ALERT::
-#    echo '  LOST "[源文稿名]"'
-#    exit  0
-#else
-echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-echo base $FILENAME
-MD=$1.md
-SLIDES=$AIMP/$1.html
-echo "got draft &lt;-- $MD"
-echo "exp. reveal.js slides -&gt; $SLIDES"
-#exit  0
-
-echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-# 构建 pandoc 命令字符串，使用多行定义
-cmd="pandoc \"$MD\" \
--o \"$AIMP/$SLIDES\" \
---standalone \
---embed-resources \
--t revealjs \
--V revealjs-url=revealjs \
--V slideNumber=true \
--V progress=true \
--V transition=concave \
--V theme=\"$SELECTED_THEME\" "
-#--css=custom.css \
-#--standalone \
-#-t revealjs \
-#-V revealjs-url=./reveal.js \
-#-V margin=0.01 \
-#-V slideNumber=true \
-#-V progress=true \
-#--css=custom.css \
-#-V transition=zoom \ fade,slide,convex,concave,zoom
-#-V theme=serif 
-
-
-# 打印命令
-echo "即将执行的命令："
-echo "$cmd"
-echo
-
-# 执行命令
-eval "$cmd"
-
-#=========================================================== path defines
-#PY=$( which python)
-#NOW_TIME_STAMP=$(date "+%y%m%d.%H%M%S")
-#echo $NOW_TIME_STAMP
-#LOGF=$UC_LOGGER_ROOT/log/api_$NOW_TIME_STAMP.log
-#LOGD=$UC_LOGGER_ROOT/log/ff2world_$NOW_TIME_STAMP.log
-#=========================================================== action defines
-#echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"  &gt;&gt; $LOGD
-#echo "###::$VER Hooks log 4 auto ff2world action"  &gt;&gt; $LOGD
-#echo "###::run@" `date +"%Y/%m/%d %H:%M:%S"` &gt;&gt; $LOGD
-#echo "&lt;&lt;&lt;   trigger by inter. API srv."  &gt;&gt; $LOGD
-
-#echo pandoc $MD -o $SLIDES -t revealjs -s -V theme=solarized
-#pandoc $MD -o $SLIDES -t revealjs -s -V theme=solarized
-
-#echo "###::end@" `date +"%Y/%m/%d %H:%M:%S"` &gt;&gt; $LOGD
-#echo "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"  &gt;&gt; $LOGD
-#=========================================================== action DONE
-echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-echo $VER
-echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-
-exit  0
-</t>
-<t tx="zoomq.20250515211657.1">@path public
 </t>
 </tnodes>
 </leo_file>
