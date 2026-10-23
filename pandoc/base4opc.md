@@ -411,7 +411,7 @@ AI 关系时间线
 > - 聚合路由: OpenRouter / 校内统一网关
 > - 敏感数据: 本地 Ollama / MLX
 > - 避坑: 远离来路不明的「灰色中转」
-> - [Grok bot](https://cursor.com/docs/grok-bot) 强力要求
+> - <～ [Grok bot](https://cursor.com/docs/grok-bot) 强力要求
 
 ## AI素养
 > 注意力
