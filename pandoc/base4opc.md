@@ -195,6 +195,13 @@ AI 关系时间线
 > - 终端复用器:
 >    + [screen](https://www.gnu.org/software/screen/) | [tumx](https://github.com/tmux/tmux) | [zellij](https://github.com/zellij-org/zellij) .. Rust
 
+## jj
+> [Jujutsu](https://www.jj-vcs.dev/latest/)
+
+- 增强版 git
+- 冲突是第一公民
+- LLM 最爱
+
 ## [herdr](https://github.com/herdrdev/herdr)
 > 智能体复用器
 
