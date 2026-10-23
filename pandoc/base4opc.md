@@ -320,9 +320,10 @@ AI 关系时间线
 
 > - Debian 13, 8核16G, 至强2.40 GHz, 128g硬盘
 > - grok 4.7
-> - box 帐号, 真实桌面+Chromium
+> - 真实桌面+Chromium
 > - 定期任务, 长期记忆 ..
 > - 自动重置
+> - 长线**对话**
 
 ## pstack
 > SpaceXai/@poteto
