@@ -420,7 +420,12 @@ AI 关系时间线
 >- [OmniRoute](https://github.com/cheaper-inference/OmniRoute)
 >   + 375 providers (150+ free)
 >   + 1,400+ models
+>   + 18+ 策略
 >   + Kimi 官方伙伴
+
+------
+
+![路由策略](img/261023-omni-rules.jpg)
 
 ## AI素养
 > 注意力
