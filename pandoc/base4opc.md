@@ -112,6 +112,13 @@
 >- 审批, 触发
 >- 确认成果
 
+## 随时调研
+> [Grok bot](https://cursor.com/docs/grok-bot)
+
+- 发现华点
+- 指派调研
+- 输出到 gh-issue
+
 ## 以上
 > 用了两年时间..
 
