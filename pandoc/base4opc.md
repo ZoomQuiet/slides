@@ -8,7 +8,7 @@
 > - 3' 背景
 > - 25' 故事
 > - 10' 小结
-> - 5' QA
+> - 7' QA
 
 ## 大妈
 >- 年龄 52
@@ -132,8 +132,9 @@ AI 关系时间线
 
 > - 2023 聊
 > - 2024 辅助..开发
->   + 2024.7 Claude MAX 订阅
+>   + Claude 网页免费版
 > - 2025 主力开发
+>   + 2025.6 Claude MAX 订阅
 > - 2026 全面替代
 
 ------
@@ -180,7 +181,7 @@ AI 关系时间线
 >    + Actions
 > - fj
 >    + [forgejo](https://forgejo.org/)
->    + golang 重构的 ghithub
+>    + golang 重构的 github
 >    + fj-action + Incus + LXC
 
 ## 配套
@@ -193,7 +194,7 @@ AI 关系时间线
 > - 终端:
 >    + [iterm2](https://iterm2.com/) | [ghostty](https://ghostty.org/) .. Zig | [tty7](https://github.com/l0ng-ai/tty7) .. Rust
 > - 终端复用器:
->    + [screen](https://www.gnu.org/software/screen/) | [tumx](https://github.com/tmux/tmux) | [zellij](https://github.com/zellij-org/zellij) .. Rust
+>    + [screen](https://www.gnu.org/software/screen/) | [tmux](https://github.com/tmux/tmux) | [zellij](https://github.com/zellij-org/zellij) .. Rust
 
 ## jj
 > [Jujutsu](https://www.jj-vcs.dev/latest/)
@@ -314,7 +315,7 @@ AI 关系时间线
 > - [oh-my-pi|omp](https://github.com/can1357/oh-my-pi)
 > - [Pi-in-Go|PiG](https://github.com/MichaelKinsy/PiG)
 
-## Grok bot
+## [Grok bot](https://cursor.com/docs/grok-bot)
 > 未来的助理
 
 > - Debian 13, 8核16G, 至强2.40 GHz, 128g硬盘
@@ -327,7 +328,7 @@ AI 关系时间线
 > SpaceXai/@poteto
 
 > - 2500+PR/m 
-> - 72小时直播,从0 创建一家关公司
+> - 72小时直播,从0 创建一家公司
 > - /how
 > - /tech
 > - /why
@@ -403,6 +404,15 @@ AI 关系时间线
 > - 值不值？| 成本
 > - 对不对？| 验证
 
+## 线路
+> 【能不能】合规与安全边界
+
+> - 官方直连: DeepSeek / GLM / Mimo
+> - 聚合路由: OpenRouter / 校内统一网关
+> - 敏感数据: 本地 Ollama / MLX
+> - 避坑: 远离来路不明的「灰色中转」
+> - [Grok bot](https://cursor.com/docs/grok-bot) 强力要求
+
 ## AI素养
 > 注意力
 
@@ -417,7 +427,7 @@ AI 关系时间线
 ## 幻灯
 > NOT PPT
 
-[slides.zoomquiet.io/base4opc](hhttps://slides.zoomquiet.io/base4opc)
+[slides.zoomquiet.io/base4opc](https://slides.zoomquiet.io/base4opc)
 
 > 高桥流 幻灯片
 
@@ -496,7 +506,7 @@ LISP..Haskell
 ## TFUG 珠海
 > 190214 ~ AI 落地
 
-- TersnorFlow
+- TensorFlow
 - Keras
 - FAST.ai
 - ...
