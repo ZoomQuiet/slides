@@ -5,9 +5,9 @@
 # 但行
 
 ## 大纲
-> - 5' 背景
-> - 20' 故事
-> - 15' 小结
+> - 3' 背景
+> - 25' 故事
+> - 10' 小结
 > - 5' QA
 
 ## 大妈
@@ -18,82 +18,18 @@
 >- OPC 3+
 >- ...
 
-## Python
-> 2002~ 啄木鸟
-
-- mailman
-- MoinMoin 1.4.*
-
-## 北京
-> 2004~ SINA.com
-
->- PHP/CVS管理器
->- FreeBSD
->- Linux
-
-## Ubuntu
-> 2005~ 
-
-日用
-
-## CPUG
-> 2005 ~ 
-
-- BPUG
-- ...
-- python-cn@googlegroups
-
-## Erlang
-> 2007 ~ 金山
-
-- ECUG
-- [erlbattle](https://github.com/ZoomQuiet/erlbattle)
-- 2010->实效云用户组
-
--------
-
-![ECUG II](coscon/0711-ecug-ii-bw.jpg)
-
 ## sociallearnlab.org
 > 教育大发现 2008 ~ 2013
 
 [社区顾问](https://github.com/ZoomQuiet/sociallearnlab/blob/master/wiki/ZqSayCommunityCreat.wiki)
 
-## [开源卫士](http://code.ijinshan.com/)
-> 2012~13 49期讲座
-
-- golang
-- node.js
-- OpenResty
-- crx.
-- SAE
-- ...
-
-## Dart
-> 2013 ~ GDG 珠海
-
-AngularJS .. Flutter
-
-## Scheme
-> 2017
-
-LISP..Haskell
-
-## TFUG 珠海
-> 190214 ~ AI 落地
-
-- TersnorFlow
-- Keras
-- FAST.ai
-- ...
-
-## Rust
-> 2019
-
-尝鲜...
-
 ## 未来
 > .. 需要什么, 就**用**什么
+
+
+------
+
+![the force...](coscon/kcn_use-the-force.jpg)
 
 # 好事
 
@@ -133,37 +69,55 @@ LISP..Haskell
 > - 策划
 > - etc.
 
-## 自怼
-> DebugUself
-
-有心无心,自然聚集
-
-
-------
-
-![怼](map/du-define-map.jpg)
-
-------
-
-![the force...](coscon/kcn_use-the-force.jpg)
-
 ## 幼儿园
 > 有好东西一定给小朋友们分享
 
+## 日常
+> 相对舒适的 AI 相处状态
+
+## 运维任务
+> 自动升级
+
+- [Pi](https://github.com/earendil-works/pi)
+- [oh-my-pi|omp](https://github.com/can1357/oh-my-pi)
+- [Pi-in-Go|PiG](https://github.com/MichaelKinsy/PiG)
+
+## 定期任务
+> 最新动态
+
+- [last30days](https://github.com/mvanhorn/last30days-skill)
+- 随时收录兴趣链接
+- 定期巡查
+- 生成汇报/文案/...
+
+## 固定任务
+> [Grok bot](https://cursor.com/docs/grok-bot)
+
+将 path/2/本地目录 中的视频,
+后期为 Youtube 节目
+
+## 人工后期
+> 剪映
+
+>- 策划
+>- 拍摄
+>- 导出, 调音/色, AI 字幕, BGM, 水词 ...
+>- 导出
+>- 上传 ..
+
+## 开发任务
+> [Grok bot](https://cursor.com/docs/grok-bot)
+
+>- 分析现象给出方案
+>- 审批, 触发
+>- 确认成果
+
+## 以上
+> 用了两年时间..
+
 # 莫问
 
-## 日常
-~ 420+CNY/m
-
-> - Grok Bot
->    + 定期热点总结
->    + 定期记忆整理
->    + 随时调研报告...
-> - herdr: omp + pi
->    + 系统/工具/服务/.. 开发
->    + 运维/发布/自动化..
-
-## 故事
+## 回顾
 AI 关系时间线
 
 > - 2023 聊
@@ -271,14 +225,24 @@ AI 关系时间线
 
 ![llm-killine](img/261017-llm-killine.png)
 
+## 够用
+> 不求最强, 但寻够用
+
+> - Mimo 2.6
+> - deepseek-4.1-flash
+> - glm-5.3-flash
+> - gpt-5.6-luna
+> - gemini-3.7-flash
+
 ## 线路
-> 订阅
+> 订阅 
 
 > - Claude
 > - OpenAI?
 > - Mimo/GLM/Deepseek/minimax/..
 > - OpenCode -> CommandCode
 > - OpenRouter/free
+> - 1000+ ~> 420元/月
 
 ## 中转
 > 灰色地带
@@ -286,12 +250,17 @@ AI 关系时间线
 > - 稳定
 > - 便宜
 > - 保真
-> - apikey.fan : [TGFZRQJ6BC2J](https://apikey.fan/register?aff=TGFZRQJ6BC2J)
 
+## 节省
+> 多快好**省**
 
-------
-
-[![APIKEY](img/TGFZRQJ6BC2J.jpeg)](https://apikey.fan/register?aff=TGFZRQJ6BC2J))
+> - 上下文管理
+> - [RTK](https://github.com/rtk-ai/rtk)
+> - [Jev](https://docs.typesafe.ai/introduction)
+>   + [System 1](https://docs.typesafe.ai/concepts/system-one)
+>   + 选择, Choice
+>   + 评估, Score
+>   + 判定, Noul
 
 ## agent
 > 代理即工程下限
@@ -301,7 +270,7 @@ AI 关系时间线
 > - Kilo
 > - Mimo
 > - Qcode
-> - pi -> omp -> pig
+> - ..
 
 ## CC
 > Claude Code
@@ -319,6 +288,14 @@ AI 关系时间线
 > - Zero Claw
 > - Nano Claw
 > - ...
+
+## Pi
+> 仙品
+
+
+> - [Pi](https://github.com/earendil-works/pi)
+> - [oh-my-pi|omp](https://github.com/can1357/oh-my-pi)
+> - [Pi-in-Go|PiG](https://github.com/MichaelKinsy/PiG)
 
 ## Grok bot
 > 未来的助理
@@ -343,16 +320,17 @@ AI 关系时间线
 ## 提升之战
 > 如何管理比自己聪明的...AI/SI ?
 
-> - DSH 
-> - 每个人都应该有自己的.. Herness
+> - [DSH](https://github.com/deepseek-ai/deepseek-harness)
+> - **一切皆插件**
+> - 每个人都应该有自己的.. Harness
 
 # 前程
 
 ## 互联网素养
 > 2013《网络素养：数字公民、集体智慧和联网的力量》
 
-> - 注意力（attention）
-> - 垃圾识别（crap detection
+> - **注意力**（attention）
+> - 垃圾识别（crap detection)
 > - 参与（participation）
 > - 协作（collaboration）
 > - 联网智慧（network smarts/awareness）
@@ -367,6 +345,7 @@ AI 关系时间线
 ## 能技
 > AA ~ activate-art
 
+
 - **能**使
     - 目标对象
         - 对指定主题
@@ -377,6 +356,8 @@ AI 关系时间线
 > AI/SI 
 
 态度
+
+> [生命3.0](https://youtu.be/mzRpmoiqhKg)
 
 ## 干活的层级
 > - 0: 干了
@@ -405,6 +386,15 @@ AI 关系时间线
 > - 值不值？| 成本
 > - 对不对？| 验证
 
+## AI素养
+> 注意力
+
+>- 关注什么就获得什么
+>- 兴趣来源品味
+>- 品味发源见识
+>- 见识经历积累
+>- 高效历经 -> SciFi
+
 # (￣▽￣)
 
 ## 幻灯
@@ -416,10 +406,99 @@ AI 关系时间线
 
 ## 是也乎
 - 261031 现场
-- 261022 定稿 得
+- 261023 改版 v2
+- 261022 定稿 v1
 - 261019 初稿
 - 261014 上线
 - 261010 init.
 
 ## Q&A
 > ask**DAMA**@**g**oo**g**le**g**roup**s**.com
+
+
+------
+
+![the force...](coscon/kcn_use-the-force.jpg)
+
+## Python
+> 2002~ 啄木鸟
+
+- mailman
+- MoinMoin 1.4.*
+
+## 北京
+> 2004~ SINA.com
+
+>- PHP/CVS管理器
+>- FreeBSD
+>- Linux
+
+## Ubuntu
+> 2005~ 
+
+日用
+
+## CPUG
+> 2005 ~ 
+
+- BPUG
+- ...
+- python-cn@googlegroups
+
+## Erlang
+> 2007 ~ 金山
+
+- ECUG
+- [erlbattle](https://github.com/ZoomQuiet/erlbattle)
+- 2010->实效云用户组
+
+-------
+
+![ECUG II](coscon/0711-ecug-ii-bw.jpg)
+
+## [开源卫士](http://code.ijinshan.com/)
+> 2012~13 49期讲座
+
+- golang
+- node.js
+- OpenResty
+- crx.
+- SAE
+- ...
+
+## Dart
+> 2013 ~ GDG 珠海
+
+AngularJS .. Flutter
+
+## Scheme
+> 2017
+
+LISP..Haskell
+
+## TFUG 珠海
+> 190214 ~ AI 落地
+
+- TersnorFlow
+- Keras
+- FAST.ai
+- ...
+
+## Rust
+> 2019
+
+尝鲜...
+
+## 自怼
+> DebugUself
+
+有心无心,自然聚集
+
+
+------
+
+![怼](map/du-define-map.jpg)
+
+------
+
+![the force...](coscon/kcn_use-the-force.jpg)
