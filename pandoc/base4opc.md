@@ -413,6 +413,15 @@ AI 关系时间线
 > - 避坑: 远离来路不明的「灰色中转」
 > - <～ [Grok bot](https://cursor.com/docs/grok-bot) 强力要求
 
+## 聚合
+> 自主托管
+
+>- [new-api](https://github.com/QuantumNous/new-api),[sub2api](https://github.com/Wei-Shaw/sub2api)
+>- [OmniRoute](https://github.com/cheaper-inference/OmniRoute)
+>   + 375 providers (150+ free)
+>   + 1,400+ models
+>   + Kimi 官方伙伴
+
 ## AI素养
 > 注意力
 
