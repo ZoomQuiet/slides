@@ -85,7 +85,7 @@
 ## 定期任务
 > 最新动态
 
-- [last30days](https://github.com/mvanhorn/last30days-skill)
+- [last30days](https://github.com/mvanhorn/last30days-skill)+[OpenCLI](https://github.com/jackwener/opencli)
 - 随时收录兴趣链接
 - 定期巡查
 - 生成汇报/文案/...
