@@ -1,6 +1,6 @@
 % AI时代<br/>基本素养
 % 普通人构建 LLM 生产力环境故事..
-% 金山软件|Chaos42DAMA
+% 金山软件|[Chaos42DAMA](https://www.youtube.com/@Chaos42DAMA/videos)
 
 # 但行
 
@@ -9,6 +9,13 @@
 > - 25' 故事
 > - 10' 小结
 > - 7' QA
+
+## 幻灯
+> NOT PPT
+
+[slides.zoomquiet.io/base4opc](https://slides.zoomquiet.io/base4opc)
+
+> 高桥流 幻灯片
 
 ## 大妈
 >- 年龄 52
@@ -155,12 +162,12 @@ AI 关系时间线
 ## 用起
 > `ANTHROP\C`  
 
-- Claude
-  + 调研
-  + Opus
-    + 写作
-    + 编程..参考
-> - 问, 复制, 调试
+>- Claude
+>  + 调研
+>  + Opus
+>    + 写作
+>    + 编程..参考
+>- 问, 复制, 调试
 
 ## 主力
 > `ANTHROP\C`  
@@ -260,6 +267,7 @@ AI 关系时间线
 > - Mimo/GLM/Deepseek/minimax/..
 > - OpenCode -> CommandCode
 > - OpenRouter/free
+> - Cursor pro
 > - 1000+ ~> 420元/月
 
 ## 中转
@@ -341,7 +349,11 @@ AI 关系时间线
 
 > - [DSH](https://github.com/deepseek-ai/deepseek-harness)
 > - **一切皆插件**
-> - 每个人都应该有自己的.. Harness
+> - 每个人都应该有自己的.. Harness 
+
+------
+
+![the force...](coscon/kcn_use-the-force.jpg)
 
 # 前程
 
@@ -360,16 +372,6 @@ AI 关系时间线
 > - Why
 > - How
 > - What
-
-## 能技
-> AA ~ activate-art
-
-
-- **能**使
-    - 目标对象
-        - 对指定主题
-    - 产生*科学兴趣* 之
-- **技**术
 
 ## 英灵
 > AI/SI 
@@ -433,11 +435,29 @@ AI 关系时间线
 
 >- 关注什么就获得什么
 >- 兴趣来源品味
->- 品味发源见识
->- 见识经历积累
->- 高效历经 -> SciFi
+>- 品味源自见识
+>- 见识基于经历
+>- 高效历练 -> **SciFi**
+
+## 能技
+> AA ~ activate-art
+
+
+- **能**使
+    - 目标对象
+        - 对指定主题
+    - 产生*科学兴趣* 之
+- **技**术
+
+
+------
+
+![the force...](coscon/kcn_use-the-force.jpg)
 
 # (￣▽￣)
+
+## Q&A
+> ask**DAMA**@**g**oo**g**le**g**roup**s**.com
 
 ## 幻灯
 > NOT PPT
@@ -448,15 +468,12 @@ AI 关系时间线
 
 ## 是也乎
 - 261031 现场
+- 261030 校对
 - 261023 改版 v2
 - 261022 定稿 v1
 - 261019 初稿
 - 261014 上线
 - 261010 init.
-
-## Q&A
-> ask**DAMA**@**g**oo**g**le**g**roup**s**.com
-
 
 ------
 
